@@ -4,197 +4,236 @@
   {
    "key": "src_heiapi",
    "name": "嘿嘿",
-   "api": "https://api.heiapi.cc/api.php/provide/vod/"
+   "api": "https://api.heiapi.cc/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_fhapi9",
    "name": "番号资源",
-   "api": "http://fhapi9.com/api.php/provide/vod/"
+   "api": "http://fhapi9.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_155api",
    "name": "155资源",
-   "api": "https://155api.com/api.php/provide/vod/"
+   "api": "https://155api.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_apilj",
    "name": "辣椒资源",
-   "api": "https://apilj.com/api.php/provide/vod/"
+   "api": "https://apilj.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_11bat",
    "name": "辣椒备用",
-   "api": "http://api.11bat.com/api.php/provide/vod/"
+   "api": "http://api.11bat.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_apilsbzy1",
    "name": "老色逼资源",
-   "api": "https://apilsbzy1.com/api.php/provide/vod/"
+   "api": "https://apilsbzy1.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_apiyutu",
    "name": "玉兔资源",
-   "api": "https://apiyutu.com/api.php/provide/vod/"
+   "api": "https://apiyutu.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_slapibf",
    "name": "森林资源",
-   "api": "https://slapibf.com/api.php/provide/vod/"
+   "api": "https://slapibf.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_lbapi9",
    "name": "乐播资源",
-   "api": "https://lbapi9.com/api.php/provide/vod/"
+   "api": "https://lbapi9.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_91md",
    "name": "91麻豆",
-   "api": "https://91md.me/api.php/provide/vod/"
+   "api": "https://91md.me/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_hsckzy888",
    "name": "黄色仓库",
-   "api": "https://hsckzy888.com/api.php/provide/vod/from/hsckm3u8/at/json"
+   "api": "https://hsckzy888.com/api.php/provide/vod/from/hsckm3u8/at/json",
+   "type": 1
   },
   {
    "key": "src_jkunzyapi",
    "name": "鸡坤资源",
-   "api": "https://jkunzyapi.com/api.php/provide/vod/"
+   "api": "https://jkunzyapi.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_xingba222",
    "name": "杏吧资源",
-   "api": "https://xingba222.com/api.php/provide/vod"
+   "api": "https://xingba222.com/api.php/provide/vod",
+   "type": 1
   },
   {
    "key": "src_thzy1",
    "name": "桃花资源",
-   "api": "https://thzy1.me/api.php/provide/vod/"
+   "api": "https://thzy1.me/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_jipinvip",
    "name": "极品资源",
-   "api": "https://jipinvip.com/api.php/provide/vod/"
+   "api": "https://jipinvip.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_fqzy",
    "name": "番茄资源",
-   "api": "https://fqzy.me/api.php/provide/vod/"
+   "api": "https://fqzy.me/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_xjzyapi",
    "name": "性技资源",
-   "api": "https://api.xjzyapi.com/provide/vod"
+   "api": "https://api.xjzyapi.com/provide/vod",
+   "type": 1
   },
   {
    "key": "src_xiaojizy",
    "name": "小妓子资源",
-   "api": "https://api.xiaojizy.live/provide/vod"
+   "api": "https://api.xiaojizy.live/provide/vod",
+   "type": 1
   },
   {
    "key": "src_apidanaizi",
    "name": "大奶子资源",
-   "api": "https://apidanaizi.com/api.php/provide/vod"
+   "api": "https://apidanaizi.com/api.php/provide/vod",
+   "type": 1
   },
   {
    "key": "src_chujia",
    "name": "出家人资源",
-   "api": "http://chujia.cc/api.php/provide/vod/from/m3u8/"
+   "api": "http://chujia.cc/api.php/provide/vod/from/m3u8/",
+   "type": 1
   },
   {
    "key": "src_madouse",
    "name": "毛豆资源",
-   "api": "http://madouse.la/api.php/provide/vod/"
+   "api": "http://madouse.la/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_bt4",
    "name": "BT资源",
-   "api": "http://bt4.cc/api.php/provide/vod/from/mdm3u8/"
+   "api": "http://bt4.cc/api.php/provide/vod/from/mdm3u8/",
+   "type": 1
   },
   {
    "key": "src_19q",
    "name": "19Q资源",
-   "api": "https://19q.cc/api.php/provide/vod"
+   "api": "https://19q.cc/api.php/provide/vod",
+   "type": 1
   },
   {
    "key": "src_91av",
    "name": "91AV",
-   "api": "https://91av.cyou/api.php/provide/vod"
+   "api": "https://91av.cyou/api.php/provide/vod",
+   "type": 1
   },
   {
    "key": "src_jingpinx",
    "name": "精品资源",
-   "api": "https://www.jingpinx.com/api.php/provide/vod/"
+   "api": "https://www.jingpinx.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_lovedan",
    "name": "恋蛋资源",
-   "api": "https://lovedan.net/api.php/provide/vod/"
+   "api": "https://lovedan.net/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_ddapi",
    "name": "滴滴资源",
-   "api": "https://api.ddapi.cc/api.php/provide/vod/"
+   "api": "https://api.ddapi.cc/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_douapi",
    "name": "豆资源",
-   "api": "https://api.douapi.cc/api.php/provide/vod/"
+   "api": "https://api.douapi.cc/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_souavzyw",
    "name": "搜AV资源",
-   "api": "https://api.souavzyw.net/api.php/provide/vod/"
+   "api": "https://api.souavzyw.net/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_souavzy",
    "name": "搜AV备用",
-   "api": "https://api.souavzy.vip/api.php/provide/vod/at/json"
+   "api": "https://api.souavzy.vip/api.php/provide/vod/at/json",
+   "type": 1
   },
   {
    "key": "src_xxavs",
    "name": "小湿妹资源",
-   "api": "https://xxavs.com/api.php/provide/vod/at/json"
+   "api": "https://xxavs.com/api.php/provide/vod/at/json",
+   "type": 1
   },
   {
    "key": "src_naixxzy",
    "name": "奶香资源",
-   "api": "https://Naixxzy.com/api.php/provide/vod/"
+   "api": "https://Naixxzy.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_yutuzy3",
    "name": "玉兔资源站",
-   "api": "https://yutuzy3.com/api.php/provide/vod/"
+   "api": "https://yutuzy3.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_ckzy",
    "name": "CK资源",
-   "api": "https://ckzy.me/api.php/provide/vod/"
+   "api": "https://ckzy.me/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_shayuapi",
    "name": "鲨鱼资源",
-   "api": "https://shayuapi.com/api.php/provide/vod/"
+   "api": "https://shayuapi.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_fhapi92",
    "name": "番号XML",
-   "api": "http://fhapi9.com/api.php/provide/vod/at/xml"
+   "api": "http://fhapi9.com/api.php/provide/vod/at/xml",
+   "type": 0
   },
   {
    "key": "src_beiyong",
    "name": "森林备用",
-   "api": "https://beiyong.slapibf.com/api.php/provide/vod/"
+   "api": "https://beiyong.slapibf.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_ckbh1",
    "name": "百货资源",
-   "api": "https://ckbh1.xyz/api.php/provide/vod/"
+   "api": "https://ckbh1.xyz/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "src_cdn",
    "name": "大众资源",
-   "api": "https://cdn.dzzyapi.com/api.php/provide/vod/"
+   "api": "https://cdn.dzzyapi.com/api.php/provide/vod/",
+   "type": 1
   },
   {
    "key": "视频采集3",
@@ -221,7 +260,7 @@
   {
    "key": "爱豆传媒",
    "name": "🔞爱豆传媒",
-   "type": 3,
+   "type": 1,
    "api": "https://rourou.co/api.php/provide/vod/",
    "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "ext": {
