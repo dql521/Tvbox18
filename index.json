@@ -1,5 +1,5 @@
 {
- "spider": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
+ "spider": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar;md5;fd3cefc7302f3a39a442682f802b11e5",
  "sites": [
   {
    "key": "src_heiapi",
@@ -223,7 +223,7 @@
    "name": "🔞爱豆传媒",
    "type": 3,
    "api": "https://rourou.co/api.php/provide/vod/",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "ext": {
     "主页url": "https://rourou.co/",
     "直接播放": "1",
@@ -250,25 +250,25 @@
    "key": "lf_js_lf_live",
    "name": "💋娱乐｜直播",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//lib/lf_live_min.js",
+   "api": "https://r18sub.web.zaka.live/lib/lf_live_min.js",
    "searchable": 1,
    "changeable": 0,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//live/live.txt"
+   "ext": "https://r18sub.web.zaka.live/live/live.txt"
   },
   {
    "key": "直播转点播1",
    "name": "💃┃佳丽┃直播",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/live2vod.js",
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//tv/live.txt"
+   "api": "https://r18sub.web.zaka.live/js/live2vod.js",
+   "ext": "https://r18sub.web.zaka.live/tv/live.txt"
   },
   {
    "key": "sebolive",
    "name": "🔞色播直播",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//lib/sebo_live.js",
+   "api": "https://r18sub.web.zaka.live/lib/sebo_live.js",
    "searchable": 0,
    "changeable": 0,
    "quickSearch": 0,
@@ -278,7 +278,7 @@
    "key": "sebolive2",
    "name": "🔞色播直播 (备用)",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//lib/sebo_live2.js",
+   "api": "https://r18sub.web.zaka.live/lib/sebo_live2.js",
    "searchable": 0,
    "changeable": 0,
    "quickSearch": 0,
@@ -291,7 +291,7 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//plugin/adult/Phb.py",
+   "api": "https://r18sub.web.zaka.live/plugin/adult/Phb.py",
    "order_num": 5,
    "ext": ""
   },
@@ -302,7 +302,7 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//plugin/adult/Xvideos.py",
+   "api": "https://r18sub.web.zaka.live/plugin/adult/Xvideos.py",
    "order_num": 5,
    "ext": ""
   },
@@ -313,7 +313,7 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//plugin/adult/heiliao.py",
+   "api": "https://r18sub.web.zaka.live/plugin/adult/heiliao.py",
    "order_num": 5,
    "ext": ""
   },
@@ -324,7 +324,7 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//plugin/adult/zone9.py",
+   "api": "https://r18sub.web.zaka.live/plugin/adult/zone9.py",
    "order_num": 5,
    "ext": ""
   },
@@ -335,7 +335,7 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//plugin/adult/xiangjiao.py",
+   "api": "https://r18sub.web.zaka.live/plugin/adult/xiangjiao.py",
    "order_num": 5,
    "ext": ""
   },
@@ -343,91 +343,91 @@
    "key": "py_porn",
    "name": "肉视频[py]",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/rousp.py",
+   "api": "https://r18sub.web.zaka.live/js/ss/rousp.py",
    "ext": ""
   },
   {
    "key": "py_huangguo",
    "name": "黄果短剧[py]",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/huangguo.py",
+   "api": "https://r18sub.web.zaka.live/js/ss/huangguo.py",
    "ext": ""
   },
   {
    "key": "py_huangdou",
    "name": "黄豆短剧[py]",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/huangdou.py",
+   "api": "https://r18sub.web.zaka.live/js/ss/huangdou.py",
    "ext": ""
   },
   {
    "key": "py_lsys111",
    "name": "恋丝影视[py]",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/lsys111.py",
+   "api": "https://r18sub.web.zaka.live/js/ss/lsys111.py",
    "ext": ""
   },
   {
    "key": "py_rolizxwnoble",
    "name": "乱伦仓库[py]",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/rolizxwnoble.py",
+   "api": "https://r18sub.web.zaka.live/js/ss/rolizxwnoble.py",
    "ext": ""
   },
   {
    "key": "py_shaofu36",
    "name": "少妇喝了[py]",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/shaofu36.py",
+   "api": "https://r18sub.web.zaka.live/js/ss/shaofu36.py",
    "ext": ""
   },
   {
    "key": "py_xx01",
    "name": "猎奇影视[py]",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/xx01.py",
+   "api": "https://r18sub.web.zaka.live/js/ss/xx01.py",
    "ext": ""
   },
   {
    "key": "py_ybhz51",
    "name": "玉蚌含珠[py]",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/ybhz51.py",
+   "api": "https://r18sub.web.zaka.live/js/ss/ybhz51.py",
    "ext": ""
   },
   {
    "key": "py_Youavhub",
    "name": "Youavhub[py]",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/youav.py",
+   "api": "https://r18sub.web.zaka.live/js/ss/youav.py",
    "ext": ""
   },
   {
    "key": "py_owoav",
    "name": "owoav[py]",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/owoav.py",
+   "api": "https://r18sub.web.zaka.live/js/ss/owoav.py",
    "ext": ""
   },
   {
    "key": "py_91porn",
    "name": "91porn[py]",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/91porn.py",
+   "api": "https://r18sub.web.zaka.live/js/ss/91porn.py",
    "ext": ""
   },
   {
    "key": "py_51吃瓜",
    "name": "51吃瓜[py]",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/xigua51.py",
+   "api": "https://r18sub.web.zaka.live/js/ss/xigua51.py",
    "ext": ""
   },
   {
    "key": "py_51短剧",
    "name": "51短剧[py]",
    "type": 3,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/duanju51.py",
+   "api": "https://r18sub.web.zaka.live/js/ss/duanju51.py",
    "ext": ""
   },
   {
@@ -436,7 +436,7 @@
    "type": 3,
    "filterable": 0,
    "changeable": 0,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/xptiantang.js"
+   "api": "https://r18sub.web.zaka.live/js/ss/xptiantang.js"
   },
   {
    "key": "女优色库",
@@ -444,7 +444,7 @@
    "type": 3,
    "filterable": 0,
    "changeable": 0,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/seku.py"
+   "api": "https://r18sub.web.zaka.live/js/ss/seku.py"
   },
   {
    "key": "py_javdb",
@@ -453,7 +453,7 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://raw.githubusercontent.com/dql521/Tvbox18/main//js/ss/javdb.py",
+   "api": "https://r18sub.web.zaka.live/js/ss/javdb.py",
    "order_num": 5,
    "ext": ""
   },
@@ -463,11 +463,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/duanju51.json"
+   "ext": "https://r18sub.web.zaka.live/json/duanju51.json"
   },
   {
    "key": "✨爱色吧✨",
@@ -475,11 +475,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/aiseba.json"
+   "ext": "https://r18sub.web.zaka.live/json/aiseba.json"
   },
   {
    "key": "文件夹",
@@ -487,11 +487,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/folder.json"
+   "ext": "https://r18sub.web.zaka.live/json/folder.json"
   },
   {
    "key": "四区",
@@ -499,11 +499,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zone4.json"
+   "ext": "https://r18sub.web.zaka.live/json/zone4.json"
   },
   {
    "key": "一区",
@@ -511,11 +511,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zone1.json"
+   "ext": "https://r18sub.web.zaka.live/json/zone1.json"
   },
   {
    "key": "SOAV",
@@ -523,95 +523,95 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/SOAV.json"
+   "ext": "https://r18sub.web.zaka.live/json/SOAV.json"
   },
   {
    "key": "18",
    "name": "㊙️18j",
    "type": 3,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "style": {
     "ratio": 1.43
    },
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//lib/18j.json"
+   "ext": "https://r18sub.web.zaka.live/lib/18j.json"
   },
   {
    "key": "奶妃",
    "name": "㊙️奶妃",
    "type": 3,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "style": {
     "ratio": 1.43
    },
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//lib/naifei.json"
+   "ext": "https://r18sub.web.zaka.live/lib/naifei.json"
   },
   {
    "key": "Aress",
    "name": "㊙️Aress",
    "type": 3,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "style": {
     "ratio": 1.43
    },
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/Aress.json"
+   "ext": "https://r18sub.web.zaka.live/json/Aress.json"
   },
   {
    "key": "Aries",
    "name": "㊙️Aries",
    "type": 3,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "style": {
     "ratio": 1.43
    },
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/Aries.json"
+   "ext": "https://r18sub.web.zaka.live/json/Aries.json"
   },
   {
    "key": "jav",
    "name": "㊙️jav",
    "type": 3,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "style": {
     "ratio": 1.43
    },
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//lib/jav.json"
+   "ext": "https://r18sub.web.zaka.live/lib/jav.json"
   },
   {
    "key": "KISSAV",
    "name": "KISSAV",
    "type": 3,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "style": {
     "ratio": 1.43
    },
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//lib/KISSAV.json"
+   "ext": "https://r18sub.web.zaka.live/lib/KISSAV.json"
   },
   {
    "key": "国产麻豆",
@@ -619,11 +619,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/madou.json"
+   "ext": "https://r18sub.web.zaka.live/json/madou.json"
   },
   {
    "key": "csp_XYQHiker_ggjav",
@@ -633,8 +633,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/ggjav.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/ggjav.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -649,8 +649,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/bad.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/bad.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.8
@@ -665,8 +665,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/bad_search1.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/bad_search1.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.8
@@ -681,8 +681,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/52av2.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/52av2.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.8
@@ -697,8 +697,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/javday.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/javday.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -713,8 +713,8 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/18jtv.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/18jtv.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -729,8 +729,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/xnxx.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/xnxx.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -745,8 +745,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/njavtv.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/njavtv.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -761,8 +761,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/missav.app.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/missav.app.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -777,8 +777,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/nowavtv.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/nowavtv.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -793,8 +793,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/91porn_asia.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/91porn_asia.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.75
@@ -809,8 +809,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/jable.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/jable.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -825,8 +825,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/av6k.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/av6k.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -841,8 +841,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/javffm.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/javffm.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -857,8 +857,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/javtsunami.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/javtsunami.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -873,8 +873,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/sehuatang1.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/sehuatang1.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "_g": "soft"
   },
   {
@@ -885,8 +885,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/pingguo.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/pingguo.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -901,8 +901,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/18av.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/18av.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -917,8 +917,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/170av.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/170av.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -933,8 +933,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/cat300.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/cat300.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "_g": "soft"
   },
   {
@@ -945,8 +945,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/coffee444.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/coffee444.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -961,8 +961,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/airav.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/airav.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -977,8 +977,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/hohoj.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/hohoj.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -993,8 +993,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/kanav.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/kanav.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1009,8 +1009,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/motv.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/motv.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1025,8 +1025,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/owoav.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/owoav.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1041,8 +1041,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/porn87.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/porn87.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1057,8 +1057,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/pornhub.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/pornhub.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1073,8 +1073,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/pornlulu.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/pornlulu.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1089,8 +1089,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/qinav.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/qinav.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1105,8 +1105,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/xHamster.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/xHamster.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1121,8 +1121,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/xvideos.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/xvideos.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1137,8 +1137,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/18jav.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/18jav.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1153,8 +1153,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/actress.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/actress.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "ratio": 1.7
    },
@@ -1168,8 +1168,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/ririlu.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/ririlu.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1184,8 +1184,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/twkiss.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/twkiss.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1200,8 +1200,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/zhenmei.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/zhenmei.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1216,8 +1216,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/yasetube.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/yasetube.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.8
@@ -1232,8 +1232,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/zhuguli.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/zhuguli.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1248,8 +1248,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/xingba.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/xingba.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1264,8 +1264,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/liliav.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/liliav.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1280,8 +1280,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/hsck123.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/hsck123.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1296,8 +1296,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/hsckla.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/hsckla.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1312,8 +1312,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/zise.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/zise.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1328,8 +1328,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/kuai.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/kuai.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1344,8 +1344,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//XYQHike/shayuav.json",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "ext": "https://r18sub.web.zaka.live/XYQHike/shayuav.json",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -1358,11 +1358,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_17c_tw.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_17c_tw.json"
   },
   {
    "key": "zs_17cap_cc",
@@ -1370,11 +1370,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_17cap_cc.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_17cap_cc.json"
   },
   {
    "key": "zs_17cap_life",
@@ -1382,11 +1382,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_17cap_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_17cap_life.json"
   },
   {
    "key": "zs_51avtv_com",
@@ -1394,11 +1394,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_51avtv_com.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_51avtv_com.json"
   },
   {
    "key": "zs_51ch1_com",
@@ -1406,11 +1406,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_51ch1_com.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_51ch1_com.json"
   },
   {
    "key": "zs_91aidasai_com",
@@ -1418,11 +1418,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_91aidasai_com.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_91aidasai_com.json"
   },
   {
    "key": "zs_91avtv_com",
@@ -1430,11 +1430,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_91avtv_com.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_91avtv_com.json"
   },
   {
    "key": "zs_91dytv_com",
@@ -1442,11 +1442,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_91dytv_com.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_91dytv_com.json"
   },
   {
    "key": "zs_91wz_life",
@@ -1454,11 +1454,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_91wz_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_91wz_life.json"
   },
   {
    "key": "zs_98tagn_life",
@@ -1466,11 +1466,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_98tagn_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_98tagn_life.json"
   },
   {
    "key": "zs_98tamg_life",
@@ -1478,11 +1478,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_98tamg_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_98tamg_life.json"
   },
   {
    "key": "zs_98tang_life",
@@ -1490,11 +1490,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_98tang_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_98tang_life.json"
   },
   {
    "key": "zs_anw3_life",
@@ -1502,11 +1502,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_anw3_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_anw3_life.json"
   },
   {
    "key": "zs_bianav_com",
@@ -1514,11 +1514,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_bianav_com.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_bianav_com.json"
   },
   {
    "key": "zs_bilibili1_life",
@@ -1526,11 +1526,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_bilibili1_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_bilibili1_life.json"
   },
   {
    "key": "zs_guazishqu_com",
@@ -1538,11 +1538,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_guazishqu_com.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_guazishqu_com.json"
   },
   {
    "key": "zs_haijiaod_com",
@@ -1550,11 +1550,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_haijiaod_com.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_haijiaod_com.json"
   },
   {
    "key": "zs_haijiaod_life",
@@ -1562,11 +1562,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_haijiaod_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_haijiaod_life.json"
   },
   {
    "key": "zs_hdmqdj_com",
@@ -1574,11 +1574,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_hdmqdj_com.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_hdmqdj_com.json"
   },
   {
    "key": "zs_heitaoo_com",
@@ -1586,11 +1586,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_heitaoo_com.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_heitaoo_com.json"
   },
   {
    "key": "zs_huanguoe_com",
@@ -1598,11 +1598,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_huanguoe_com.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_huanguoe_com.json"
   },
   {
    "key": "zs_javtang_life",
@@ -1610,11 +1610,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_javtang_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_javtang_life.json"
   },
   {
    "key": "zs_juziavtv_com",
@@ -1622,11 +1622,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_juziavtv_com.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_juziavtv_com.json"
   },
   {
    "key": "zs_laow3_life",
@@ -1634,11 +1634,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_laow3_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_laow3_life.json"
   },
   {
    "key": "zs_madotang_life",
@@ -1646,11 +1646,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_madotang_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_madotang_life.json"
   },
   {
    "key": "zs_madoue_life",
@@ -1658,11 +1658,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_madoue_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_madoue_life.json"
   },
   {
    "key": "zs_okxav_com",
@@ -1670,11 +1670,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_okxav_com.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_okxav_com.json"
   },
   {
    "key": "zs_sifangktv_one",
@@ -1682,11 +1682,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_sifangktv_one.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_sifangktv_one.json"
   },
   {
    "key": "zs_wge3_life",
@@ -1694,11 +1694,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_wge3_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_wge3_life.json"
   },
   {
    "key": "zs_wuxiants_life",
@@ -1706,11 +1706,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_wuxiants_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_wuxiants_life.json"
   },
   {
    "key": "zs_wuye_life",
@@ -1718,11 +1718,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_wuye_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_wuye_life.json"
   },
   {
    "key": "zs_xduoxin_life",
@@ -1730,11 +1730,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_xduoxin_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_xduoxin_life.json"
   },
   {
    "key": "zs_xfp8_life",
@@ -1742,11 +1742,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_xfp8_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_xfp8_life.json"
   },
   {
    "key": "zs_xguetv_com",
@@ -1754,11 +1754,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_xguetv_com.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_xguetv_com.json"
   },
   {
    "key": "zs_xineba_life",
@@ -1766,11 +1766,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_xineba_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_xineba_life.json"
   },
   {
    "key": "zs_yeshex_life",
@@ -1778,11 +1778,11 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_yeshex_life.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_yeshex_life.json"
   },
   {
    "key": "zs_yiqicao_fun",
@@ -1790,24 +1790,24 @@
    "type": 3,
    "playerType": 2,
    "api": "csp_XBPQ",
-   "jar": "https://raw.githubusercontent.com/dql521/Tvbox18/main//jar/xyqxbpq.jar",
+   "jar": "https://r18sub.web.zaka.live/jar/xyqxbpq.jar",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://raw.githubusercontent.com/dql521/Tvbox18/main//json/zsite_yiqicao_fun.json"
+   "ext": "https://r18sub.web.zaka.live/json/zsite_yiqicao_fun.json"
   }
  ],
  "lives": [
   {
    "name": "台湾品牌成人台",
    "type": 0,
-   "url": "https://raw.githubusercontent.com/dql521/Tvbox18/main//live.m3u",
+   "url": "https://r18sub.web.zaka.live/live.m3u",
    "playerType": 1
   },
   {
    "name": "台湾品牌台(P2P)",
    "type": 0,
-   "url": "https://raw.githubusercontent.com/dql521/Tvbox18/main//live-p2p.m3u",
+   "url": "https://r18sub.web.zaka.live/live-p2p.m3u",
    "playerType": 1
   }
  ],

@@ -42,10 +42,22 @@ https://r18sub.web.zaka.live/index.json
 
 把上面这个地址填进壳的订阅位置，导入即可，不需要下载任何文件。
 
-**自己部署（可选）：**
+**自己部署 / 换线路（可选，包里有工具）：**
 
-整套文件要放同一目录（仓库根目录），`index.json` 靠目录结构找依赖，
-只传 `index.json` 会导致依赖加载不到。部署方法见 `使用说明.txt`。
+整套文件要放同一地址下（仓库根目录），`index.json` 靠目录结构找依赖，
+只传 `index.json` 会导致依赖加载不到。
+
+搬到自己的 GitHub 后，一条命令把整包地址换成你的，并一次生成多条国内线路：
+
+```bash
+python3 set-lines.py --check          # 先实测你那边哪条线路通
+python3 set-lines.py --mirror         # 生成推荐线路全套 index-<线路>.json
+python3 set-lines.py --mirror all     # 全部线路
+python3 set-lines.py --base https://你的域名/   # 换到自己的服务器
+```
+
+手机上想直接测线路：打开 https://r18sub.web.zaka.live/check-lines.html
+填用户名和仓库名，点一下就知道哪条通。详细步骤见 `使用说明.txt`。
 
 ## 壳的要求
 

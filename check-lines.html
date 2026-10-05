@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Zaka 订阅 · 线路一键实测</title>
+<style>
+  :root{--bg:#0f1115;--card:#171a21;--line:#262b35;--fg:#e8eaee;--dim:#8b93a3;
+        --ok:#2fbf71;--bad:#e5484d;--warn:#e0a33e;--acc:#4c8dff}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font:15px/1.55 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+       padding:16px 14px 40px;-webkit-text-size-adjust:100%}
+  h1{font-size:19px;margin:0 0 4px}
+  .sub{color:var(--dim);font-size:13px;margin-bottom:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px}
+  label{display:block;font-size:13px;color:var(--dim);margin:8px 0 4px}
+  input{width:100%;padding:11px 12px;border-radius:9px;border:1px solid var(--line);
+        background:#0c0e12;color:var(--fg);font-size:15px}
+  button{width:100%;margin-top:14px;padding:13px;border:0;border-radius:10px;
+         background:var(--acc);color:#fff;font-size:16px;font-weight:600}
+  button:disabled{opacity:.55}
+  .row{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--line);
+       flex-wrap:wrap}
+  .row:last-child{border-bottom:0}
+  .badge{font-size:12px;font-weight:700;padding:3px 8px;border-radius:6px;min-width:58px;text-align:center}
+  .b-wait{background:#2a3040;color:var(--dim)}
+  .b-ok{background:rgba(47,191,113,.16);color:var(--ok)}
+  .b-bad{background:rgba(229,72,77,.16);color:var(--bad)}
+  .b-warn{background:rgba(224,163,62,.16);color:var(--warn)}
+  .name{flex:1;min-width:130px;font-size:14px}
+  .name small{display:block;color:var(--dim);font-size:12px}
+  .ms{color:var(--dim);font-size:12px;min-width:52px;text-align:right}
+  .acts{display:flex;gap:8px;width:100%;padding-left:0}
+  .acts a,.acts button.copy{font-size:12px;color:var(--acc);background:none;border:1px solid var(--line);
+        border-radius:7px;padding:5px 10px;width:auto;margin:0;text-decoration:none;font-weight:500}
+  .tip{color:var(--dim);font-size:12.5px;line-height:1.7}
+  .tip b{color:var(--fg);font-weight:600}
+  code{background:#0c0e12;border:1px solid var(--line);border-radius:5px;padding:1px 5px;font-size:12.5px;
+       word-break:break-all}
+  .best{margin-top:10px;padding:11px;border-radius:9px;background:rgba(47,191,113,.1);
+        border:1px solid rgba(47,191,113,.35);font-size:13.5px;display:none}
+  .best code{display:block;margin-top:7px;padding:8px;background:#0c0e12}
+</style>
+</head>
+<body>
+<h1>线路一键实测</h1>
+<div class="sub">测你当前网络下,哪条地址能拉到订阅。手机浏览器直接打开就能用,不用装东西。</div>
+
+<div class="card">
+  <label>GitHub 用户名</label>
+  <input id="u" placeholder="比如 zhangsan" autocapitalize="off" autocorrect="off">
+  <label>仓库名</label>
+  <input id="r" placeholder="比如 zaka-sub" autocapitalize="off" autocorrect="off">
+  <label>分支名（不确定就留 main）</label>
+  <input id="b" value="main" autocapitalize="off" autocorrect="off">
+  <button id="go">开始实测</button>
+  <div class="tip" style="margin-top:10px">
+    没填仓库名就直接点——先测「现成地址」这条通不通。<br>
+    建好仓库再回来填用户名和仓库名，测你自己那套镜像线路。
+  </div>
+</div>
+
+<div class="card" id="list"></div>
+
+<div class="best" id="best"></div>
+
+<div class="card tip">
+  <b>怎么用结果</b><br>
+  哪条显示「通」,就把那条地址复制进壳的订阅位置。<br>
+  标「不确定」的是浏览器不让跨站读内容(不是线路坏),点「打开」看一眼能不能出内容就行。<br>
+  <b>测出来一条都不通</b> → 大概率是仓库还没传好,或者仓库设成了 Private(私有仓库镜像拉不到)。<br>
+  <b>懒人方案</b> → 直接填现成地址:<br>
+  <code>https://r18sub.web.zaka.live/index.json</code>
+</div>
+
+<script>
+var LOCAL = 'https://r18sub.web.zaka.live/index.json';
+var LINES = [
+  ['local',     '现成地址（Zaka 服务器）', null],
+  ['raw',       '官方 raw 直连',        function(u,r,b){return 'https://raw.githubusercontent.com/'+u+'/'+r+'/'+b+'/index.json'}],
+  ['jsd',       'jsDelivr 主入口',      function(u,r,b){return 'https://cdn.jsdelivr.net/gh/'+u+'/'+r+'@'+b+'/index.json'}],
+  ['fastly',    'jsDelivr · Fastly',    function(u,r,b){return 'https://fastly.jsdelivr.net/gh/'+u+'/'+r+'@'+b+'/index.json'}],
+  ['gcore',     'jsDelivr · Gcore',     function(u,r,b){return 'https://gcore.jsdelivr.net/gh/'+u+'/'+r+'@'+b+'/index.json'}],
+  ['testingcf', 'jsDelivr · Cloudflare',function(u,r,b){return 'https://testingcf.jsdelivr.net/gh/'+u+'/'+r+'@'+b+'/index.json'}],
+  ['ghproxy',   'gh-proxy.com 代理',    function(u,r,b){return 'https://gh-proxy.com/https://raw.githubusercontent.com/'+u+'/'+r+'/'+b+'/index.json'}],
+  ['ghpnet',    'ghproxy.net 代理',     function(u,r,b){return 'https://ghproxy.net/https://raw.githubusercontent.com/'+u+'/'+r+'/'+b+'/index.json'}],
+  ['ghfast',    'ghfast.top 代理',      function(u,r,b){return 'https://ghfast.top/https://raw.githubusercontent.com/'+u+'/'+r+'/'+b+'/index.json'}],
+  ['llkk',      'gh.llkk.cc 代理',      function(u,r,b){return 'https://gh.llkk.cc/https://raw.githubusercontent.com/'+u+'/'+r+'/'+b+'/index.json'}],
+  ['bgh',       'bgithub 镜像',         function(u,r,b){return 'https://raw.bgithub.xyz/'+u+'/'+r+'/'+b+'/index.json'}],
+  ['gitproxy',  'gitproxy.click 代理',  function(u,r,b){return 'https://gitproxy.click/https://raw.githubusercontent.com/'+u+'/'+r+'/'+b+'/index.json'}],
+  ['jsdmirror', 'jsdmirror CDN',        function(u,r,b){return 'https://cdn.jsdmirror.com/gh/'+u+'/'+r+'@'+b+'/index.json'}]
+];
+
+function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
+function setBadge(row,cls,txt){var b=row.querySelector('.badge');b.className='badge '+cls;b.textContent=txt}
+
+function build(u,r,b){
+  var box=document.getElementById('list');box.innerHTML='';
+  var rows=[];
+  LINES.forEach(function(L){
+    if(!L[2] && (!u||!r)){ /* 本站线路永远保留 */ }
+    if(L[2] && (!u||!r))return;              // 没填仓库就只测本站
+    var row=el('div','row');
+    row.appendChild(el('span','badge b-wait','待测'));
+    var url=L[2]?L[2](u,r,b):LOCAL;
+    var n=el('div','name',L[1]+'<small>'+L[0]+'</small>');
+    row.appendChild(n);
+    row.appendChild(el('span','ms','—'));
+    var acts=el('div','acts');
+    var a=document.createElement('a');a.href='#';a.textContent='打开';a.style.textDecoration='none';
+    a.onclick=function(ev){ev.preventDefault();window.open(url,'_blank')};
+    var cp=document.createElement('button');cp.className='copy';cp.textContent='复制地址';
+    cp.onclick=function(){copy(url)};
+    acts.appendChild(a);acts.appendChild(cp);
+    row.appendChild(acts);
+    box.appendChild(row);
+    rows.push({row:row,url:url,code:L[0],label:L[1]});
+  });
+  return rows;
+}
+
+function copy(t){
+  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t);return}
+  var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity=0;
+  document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}
+  document.body.removeChild(ta);
+}
+
+function testOne(item){
+  var t0=performance.now();
+  var done=false;
+  var timer=setTimeout(function(){
+    if(!done){done=true;setBadge(item.row,'b-bad','超时');item.row.querySelector('.ms').textContent='>12s'}
+  },12000);
+  fetch(item.url+'?t='+Date.now(),{cache:'no-store'})
+    .then(function(res){
+      if(!res.ok)throw new Error('HTTP '+res.status);
+      return res.text();
+    })
+    .then(function(txt){
+      if(done)return;done=true;clearTimeout(timer);
+      var ms=Math.round(performance.now()-t0);
+      var good=txt.indexOf('"sites"')>=0||txt.indexOf('"spider"')>=0;
+      setBadge(item.row,good?'b-ok':'b-warn',good?'通':'内容不对');
+      item.row.querySelector('.ms').textContent=ms+'ms';
+      if(good)item.ok=true;
+    })
+    .catch(function(){
+      // 跨站被浏览器拦住,不代表线路坏——退一步只探连通性
+      fetch(item.url+'?t='+Date.now(),{mode:'no-cors',cache:'no-store'})
+        .then(function(){
+          if(done)return;done=true;clearTimeout(timer);
+          setBadge(item.row,'b-warn','不确定');
+          item.row.querySelector('.ms').textContent=Math.round(performance.now()-t0)+'ms';
+          item.soft=true;
+        })
+        .catch(function(){
+          if(done)return;done=true;clearTimeout(timer);
+          setBadge(item.row,'b-bad','不通');
+          item.row.querySelector('.ms').textContent=Math.round(performance.now()-t0)+'ms';
+        });
+    });
+}
+
+function showBest(rows){
+  var ok=rows.filter(function(x){return x.ok});
+  var soft=rows.filter(function(x){return !x.ok&&x.soft});
+  var box=document.getElementById('best');
+  var pick=(ok.length?ok:soft)[0];
+  if(!pick){box.style.display='none';return}
+  box.style.display='block';
+  box.innerHTML='推荐填这条（'+(ok.length?'实测能拉到内容':'连通性可用,点「打开」确认一下')+'）:<code>'+
+                pick.url+'</code>';
+}
+
+document.getElementById('go').onclick=function(){
+  var u=(document.getElementById('u').value||'').trim();
+  var r=(document.getElementById('r').value||'').trim();
+  var b=(document.getElementById('b').value||'main').trim()||'main';
+  this.disabled=true;
+  this.textContent=(u&&r)?'实测中…（十几秒）':'正在测现成地址…';
+  var self=this;
+  var rows=build(u,r,b);
+  rows.forEach(testOne);
+  var iv=setInterval(function(){
+    if(rows.every(function(x){return x.row.querySelector('.badge').textContent!=='待测'})){
+      clearInterval(iv);showBest(rows);
+      self.disabled=false;self.textContent='再测一次';
+    }
+  },400);
+};
+
+// 默认填一次本机记住的仓库，省得每次重打
+try{
+  var saved=JSON.parse(localStorage.getItem('zaka_repo')||'null');
+  if(saved){document.getElementById('u').value=saved.u;document.getElementById('r').value=saved.r;
+            document.getElementById('b').value=saved.b||'main'}
+}catch(e){}
+document.getElementById('go').addEventListener('click',function(){
+  try{localStorage.setItem('zaka_repo',JSON.stringify({
+    u:document.getElementById('u').value.trim(),
+    r:document.getElementById('r').value.trim(),
+    b:document.getElementById('b').value.trim()||'main'}))}catch(e){}
+});
+
+// 支持带参数直接开测： ?u=用户名&r=仓库名&b=分支  /  ?local=1 只测现成地址
+(function(){
+  var q=new URLSearchParams(location.search);
+  if(q.get('local')){
+    setTimeout(function(){document.getElementById('go').click()},300);
+    return;
+  }
+  if(!q.get('u')||!q.get('r'))return;
+  document.getElementById('u').value=q.get('u');
+  document.getElementById('r').value=q.get('r');
+  document.getElementById('b').value=q.get('b')||'main';
+  setTimeout(function(){document.getElementById('go').click()},400);
+})();
+</script>
+</body>
+</html>
