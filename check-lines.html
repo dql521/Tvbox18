@@ -71,11 +71,11 @@
   标「不确定」的是浏览器不让跨站读内容(不是线路坏),点「打开」看一眼能不能出内容就行。<br>
   <b>测出来一条都不通</b> → 大概率是仓库还没传好,或者仓库设成了 Private(私有仓库镜像拉不到)。<br>
   <b>懒人方案</b> → 直接填现成地址:<br>
-  <code>https://r18sub.web.zaka.live/index.json</code>
+  <code>./index.json</code>
 </div>
 
 <script>
-var LOCAL = 'https://r18sub.web.zaka.live/index.json';
+var LOCAL = './index.json';
 var LINES = [
   ['local',     '现成地址（Zaka 服务器）', null],
   ['raw',       '官方 raw 直连',        function(u,r,b){return 'https://raw.githubusercontent.com/'+u+'/'+r+'/'+b+'/index.json'}],
@@ -218,5 +218,6 @@ document.getElementById('go').addEventListener('click',function(){
   setTimeout(function(){document.getElementById('go').click()},400);
 })();
 </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"4ee7bbc785e4484e8da11248beef5105","r":1,"spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>

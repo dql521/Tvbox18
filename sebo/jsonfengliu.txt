@@ -1,0 +1,9 @@
+{
+"zhubo": [
+{ "address":"http://77bo.xn--vuqy52q.com/live/cx_15568.flv?wsSecret=b8ac9f08f983908f44698b1f05d3e2c7&wsTime=1791216014","img":"https://jdhanhdckdkakk.quanyuanhj.com/7707/live/images/a3df3771a0ca2b5a5cffb0bb661184b3","title":"\u94C1\u9505\u7096\u6392\u9AA8"},
+{ "address":"http://77bo.xn--thqp73n.com/live/cx_16817.flv?wsSecret=7099ab3f225145d1bac43b711175cc2b&wsTime=1791216102","img":"https://jdhanhdckdkakk.quanyuanhj.com/7707/live/images/6b0e20a4d62d20148a5e9a7754a28ad8","title":"\u91CE\u767E\u5408\u7684\u6625"},
+{ "address":"http://77b.xn--ypzw80d.com/live/cx_15710.flv?wsSecret=1009dbdfe74bb0f8d35bc8fc3ec1bd23&wsTime=1791100815","img":"https://jdhanhdckdkakk.quanyuanhj.com/7707/live/images/abce6c20923a85bf99d012a0ccf8f45d","title":"\u771F\u5B9E\u63A2\u82B1\u5AD6\u5A3C@"},
+{ "address":"http://77bo.xn--vuqy52q.com/live/cx_3301.flv?wsSecret=1479f8cae8f540773edbb5e07f5ba475&wsTime=1791217224","img":"https://jdhanhdckdkakk.quanyuanhj.com/7707/live/images/2f806b1efc44b7c978e60c941cdd6b62","title":"\u5E7C\u5E7C\u5440"},
+{ "address":"http://77bo.xn--fhqv92p.com/live/cx_24.flv?wsSecret=7aa7c7bc5dcda941a21d3bdd122a1716&wsTime=1791191945","img":"https://jdhanhdckdkakk.quanyuanhj.com/7707/live/images/f71e7e189eaab5d2410e8a30bfdab6f3","title":"\u5DE8\u4E73\u547B\u541F@"}
+]
+}

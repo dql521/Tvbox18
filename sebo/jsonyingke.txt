@@ -1,0 +1,5 @@
+{
+"zhubo": [
+{ "address":"http://extlive-pull-ws.inke.cn/live/1791214526843215.flv?auth_version=1&codecInfo=8192&dpSrc=-1&from=hallfe&ikHost=ws&ikLiveType=multiplayer&ikLog=1&md5sum=6309&pushHost=zego-sixlive.link.inke.cn&timestamp=1791217574","img":"http://img.ikstatic.cn/MTc2MTM1NzA0NTIzNCM1MzEjanBn.jpg","title":"\u540E\u8D77\u4E4B\u79C0\u4EA4\u53CB\u5385"}
+]
+}

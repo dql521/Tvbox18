@@ -1,0 +1,15 @@
+{
+ "作者": "Zaka",
+ "站名": "一起草",
+ "请求头": "User-Agent$MOBILE_UA",
+ "编码": "UTF-8",
+ "主页url": "https://17c.tw/vod",
+ "分类url": "https://17c.tw/video/Categories/{cateId}.html",
+ "分类": "国产$11#日本$12#动漫$15#欧美$13#三级$14#另类$34#专题$1#",
+ "数组": "video-item\">&&</li>",
+ "标题": "alt=\"&&\"",
+ "图片": "data-src=\"&&\"",
+ "链接": "href=\"&&\"",
+ "搜索url": "https://17c.tw/search/keyword/wd/{wd}.html",
+ "搜索模式": "1"
+}

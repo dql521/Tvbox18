@@ -24,7 +24,7 @@ class Spider(Spider):
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "api": "./py/Phb.py",
+            "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/Phb.py",
             "ext": {
                 "http": "http://127.0.0.1:1072",
                 "https": "http://127.0.0.1:1072"

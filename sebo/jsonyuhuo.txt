@@ -1,0 +1,11 @@
+{
+"zhubo": [
+{ "address":"http://77bo.xn--fhqv92p.com/live/cx_15604.flv?wsSecret=c607297bb85fa22cdd5cb31b390696c1&wsTime=1791191222","img":"https://jdhanhdckdkakk.quanyuanhj.com/7707/live/images/a7ae4583d43fe36b5b92cbd3d39f200f","title":"\u804C\u573A\u8EAB\u4F53\u4E0A\u4F4D@"},
+{ "address":"http://77bo.xn--4lw519c.com/live/cx_16400.flv?wsSecret=cc32868fc7f8a5036c2a73c9b69e3355&wsTime=1791216170","img":"https://jdhanhdckdkakk.quanyuanhj.com/7707/live/images/f39724a56072fad29c7597734ef5eb18","title":"\u6C14\u6CE1\u829D\u58EB"},
+{ "address":"http://77bo.xn--uw0as83a.com/live/cx_14194.flv?wsSecret=328d8bac5047723ae37a23d730af6969&wsTime=1791216031","img":"https://jdhanhdckdkakk.quanyuanhj.com/7707/live/images/1bf436b6d487f1bbdb94519386b6a8fe","title":"\u6F2B\u59AE"},
+{ "address":"http://77bo.xn--vuqy52q.com/live/cx_8756.flv?wsSecret=8301d95f4e61e5cc5e14827475bafee5&wsTime=1791216090","img":"https://jdhanhdckdkakk.quanyuanhj.com/7707/live/images/d1bf11fa82b392d81919ab439d8ec0b9","title":"\u6E7F\u8F6F\u8F6F"},
+{ "address":"http://77bo.xn--ypzw80d.com/live/cx_15560.flv?wsSecret=67e93ff5c134924860e9e892861c125c&wsTime=1791219042","img":"https://jdhanhdckdkakk.quanyuanhj.com/7707/live/images/e4cd3b215287adbcf599044c7f3e31f3","title":"\u60A0\u54AA"},
+{ "address":"http://77bo.xn--fhqv92p.com/live/cx_15652.flv?wsSecret=558bfc1d03c90bf09fee54f332d0709d&wsTime=1791191531","img":"https://jdhanhdckdkakk.quanyuanhj.com/7707/live/images/18af5c93221027fd699dd01c0ec99374","title":"\u6309\u6469\u9986\u7684\u79D8\u5BC6@"},
+{ "address":"http://77bo.xn--t8w422e.com/live/cx_16468.flv?wsSecret=c6ffd7ce52927f5aa956d87ef1c67f0d&wsTime=1791221701","img":"https://jdhanhdckdkakk.quanyuanhj.com/7707/live/images/8b06b03525a0eb01bdb35129c1902114","title":"\u5C0F\u5E03\u4E01\u3002"}
+]
+}

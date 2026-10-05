@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Zaka 成人订阅 · 国内镜像版</title>
+<style>
+  :root{--bg:#0f1115;--card:#171a21;--line:#262b35;--fg:#e8eaee;--dim:#8b93a3;--acc:#4c8dff;--ok:#2fbf71;--warn:#e8b23a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);min-height:100vh;
+       font:15px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+       padding:28px 16px 56px;display:flex;justify-content:center}
+  .wrap{width:100%;max-width:620px}
+  h1{font-size:20px;margin:0 0 6px}
+  .sub{color:var(--dim);font-size:13.5px;margin-bottom:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px}
+  .card h2{font-size:14px;margin:0 0 12px;color:var(--dim);font-weight:600;letter-spacing:.4px}
+  .row{display:flex;gap:8px;align-items:center;margin-bottom:9px}
+  .row .u{flex:1;min-width:0;font:12.5px/1.5 ui-monospace,Menlo,Consolas,monospace;
+          background:#0d0f13;border:1px solid var(--line);border-radius:8px;padding:8px 10px;
+          color:#b9c3d4;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+  .row .u::-webkit-scrollbar{display:none}
+  button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:8px 12px;
+         font-size:12.5px;cursor:pointer;white-space:nowrap;font-weight:600}
+  button.ghost{background:#232833;color:#c3cbd8}
+  input{width:100%;background:#0d0f13;border:1px solid var(--line);border-radius:8px;
+        padding:10px 12px;color:var(--fg);font-size:14px;outline:none}
+  input:focus{border-color:var(--acc)}
+  .hint{color:var(--dim);font-size:12.5px;margin:8px 0 0}
+  .tag{display:inline-block;font-size:11.5px;padding:2px 8px;border-radius:20px;margin-left:6px;vertical-align:middle}
+  .tag.ok{background:rgba(47,191,113,.15);color:var(--ok)}
+  .tag.warn{background:rgba(232,178,58,.15);color:var(--warn)}
+  ol{padding-left:20px;margin:4px 0 0}
+  li{margin-bottom:6px;font-size:13.5px}
+  code{background:#0d0f13;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:12.5px}
+  .foot{color:var(--dim);font-size:12px;text-align:center;margin-top:22px}
+  .step{color:var(--fg)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Zaka 成人订阅 · 国内镜像版</h1>
+  <div class="sub">整站自包含：153 条点播源 · 24 路品牌成人台 · 96 份规则 · 色播直播全量数据</div>
+
+  <div class="card">
+    <h2>填一下你自己的仓库（只填一次）</h2>
+    <input id="repo" placeholder="用户名/仓库名，例如 zhangsan/zaka-sub" autocomplete="off" spellcheck="false">
+    <p class="hint">填完下面所有地址会自动生成，点「复制」直接粘进壳里当订阅地址。</p>
+  </div>
+
+  <div class="card">
+    <h2>订阅地址（任选一条，实测都通）</h2>
+    <div id="list"></div>
+  </div>
+
+  <div class="card">
+    <h2>部署三步</h2>
+    <ol>
+      <li><span class="step">新建一个 GitHub 仓库，勾 <code>Public</code></span></li>
+      <li><span class="step">把这个包里的<b>全部内容</b>传上去（含所有文件夹，目录结构别改）</span></li>
+      <li><span class="step">拿上面的地址填进壳里 → 删掉旧订阅重新添加一次</span></li>
+    </ol>
+    <p class="hint">仓库要 Public（私有仓库镜像拉不到）；分支名要跟地址里的 <code>main</code> 对上。</p>
+  </div>
+
+  <div class="card">
+    <h2>不想折腾 GitHub</h2>
+    <div class="row">
+      <div class="u" id="direct">https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/index.json</div>
+      <button data-copy="direct">复制</button>
+    </div>
+    <p class="hint">这是已经上线验过的托管地址，国内直连，不用自己搭。</p>
+  </div>
+
+  <div class="foot">源是活的，今天通明天可能断。哪条点开不出片，把名字发我就行。</div>
+</div>
+<script>
+var MIRRORS = [
+  ["gh-proxy.com",   "https://gh-proxy.com/https://raw.githubusercontent.com/{R}/main/index.json"],
+  ["ghproxy.net",    "https://ghproxy.net/https://raw.githubusercontent.com/{R}/main/index.json"],
+  ["gh.llkk.cc",     "https://gh.llkk.cc/https://raw.githubusercontent.com/{R}/main/index.json"],
+  ["ghfast.top",     "https://ghfast.top/https://raw.githubusercontent.com/{R}/main/index.json"],
+  ["jsdelivr(快)",   "https://fastly.jsdelivr.net/gh/{R}@main/index.json"],
+  ["jsdmirror",      "https://cdn.jsdmirror.com/gh/{R}@main/index.json"]
+];
+var listEl = document.getElementById('list');
+var repoEl = document.getElementById('repo');
+
+function render() {
+  var r = (repoEl.value || '').trim().replace(/^\/+|\/+$/g, '').replace(/^https?:\/\/[^/]+\//, '');
+  if (!r) r = '你的用户名/仓库名';
+  listEl.innerHTML = '';
+  MIRRORS.forEach(function (m, i) {
+    var url = m[1].replace('{R}', r);
+    var row = document.createElement('div');
+    row.className = 'row';
+    var u = document.createElement('div');
+    u.className = 'u';
+    u.textContent = url;
+    var b = document.createElement('button');
+    b.textContent = '复制';
+    b.onclick = function () { copy(url, b); };
+    row.appendChild(u); row.appendChild(b);
+    listEl.appendChild(row);
+  });
+}
+function copy(t, btn) {
+  var done = function () { if (!btn) return; var o = btn.textContent; btn.textContent = '已复制 ✓'; setTimeout(function () { btn.textContent = o; }, 1500); };
+  if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(t).then(done, done); return; }
+  var ta = document.createElement('textarea');
+  ta.value = t; ta.style.position = 'fixed'; ta.style.opacity = 0;
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand('copy'); } catch (e) {}
+  document.body.removeChild(ta); done();
+}
+document.querySelectorAll('button[data-copy]').forEach(function (b) {
+  b.onclick = function () { copy(document.getElementById(b.dataset.copy).textContent.trim(), b); };
+});
+repoEl.addEventListener('input', render);
+render();
+</script>
+</body>
+</html>

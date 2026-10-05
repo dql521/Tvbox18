@@ -1,0 +1,10 @@
+{
+"zhubo": [
+{ "address":"http://xcpla1dkajewe.korey0sh1.com/live/cx_377328.flv?wsSecret=1bf9f8cd783c1ba27d5c035e275e5bd6&wsTime=1791201371","img":"https://mjdnhajichdfadff81.quanyuanhj.com/7701/live/images/e6db3bafe24ecbe60cc68379bf51dc16","title":"\u53F8\u7406\u7406"},
+{ "address":"http://la1jawumetaal.jinkangyl.com/live/cx_387139.flv?wsSecret=916376dcf12799201f4b61d3fcfbc7db&wsTime=1791213577","img":"https://mjdnhajichdfadff81.quanyuanhj.com/7701/live/images/695ae90a2d2540786f0aaf3598242467","title":"\u5C0F\u8C46\u5305"},
+{ "address":"http://thborsejnetsa002la.zztcaigou.com/live/cx_386889.flv?wsSecret=9f0b3fde3d50f002bc13b53ba713acfc&wsTime=1791221399","img":"https://mjdnhajichdfadff81.quanyuanhj.com/7701/live/images/dc4000a3650d892e22ab38f9b1f2d21a","title":"\u662F\u5B89\u5B89\u5416"},
+{ "address":"http://xcpla1dkajewe.korey0sh1.com/live/cx_387625.flv?wsSecret=c268fd4f26ee9392c2e405dbf07fd84f&wsTime=1791215235","img":"https://mjdnhajichdfadff81.quanyuanhj.com/7701/live/images/224bd9c00d32041a4786ecde2dd7f236","title":"\u5C0F\u5341\u4E8C"},
+{ "address":"http://881wiketzwekhela.zztcaigou.com/live/cx_386495.flv?wsSecret=6281da2a979c6e1a73247bca87c28009&wsTime=1791217525","img":"https://mjdnhajichdfadff81.quanyuanhj.com/7701/live/images/2b6abf7df8a3c7d5d7232865fdbfa2ba","title":"\u4E56\u4E56\u7CEF"},
+{ "address":"http://xcpla1dkajewe.korey0sh1.com/live/cx_385550.flv?wsSecret=d51ab623cc742e0f7caeb4f9e91525ad&wsTime=1791112814","img":"https://mjdnhajichdfadff81.quanyuanhj.com/7701/live/images/92ab7c52c8d4217a943d6349e3889847","title":"\u5C9B\u56FD\u4E00\u672C\u9053\u4E1C\u4EAC\u70ED"}
+]
+}
