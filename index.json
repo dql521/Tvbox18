@@ -226,6 +226,26 @@
    "ext": "./tv/live.txt"
   },
   {
+   "key": "sebolive",
+   "name": "🔞色播直播",
+   "type": 3,
+   "api": "./lib/sebo_live.js",
+   "searchable": 0,
+   "changeable": 0,
+   "quickSearch": 0,
+   "filterable": 0
+  },
+  {
+   "key": "sebolive2",
+   "name": "🔞色播直播 (备用)",
+   "type": 3,
+   "api": "./lib/sebo_live2.js",
+   "searchable": 0,
+   "changeable": 0,
+   "quickSearch": 0,
+   "filterable": 0
+  },
+  {
    "key": "Phb.py",
    "name": "Phb.py",
    "type": 3,
@@ -565,6 +585,1177 @@
    "quickSearch": 1,
    "filterable": 1,
    "ext": "./json/madou.json"
+  },
+  {
+   "key": "csp_XYQHiker_ggjav",
+   "name": "🔞GGJAV",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/ggjav.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_bad",
+   "name": "🔞Bad.news(XYQHiker)",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/bad.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.8
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_bad搜索1",
+   "name": "🔞Bad.news搜索AV(XYQHiker)",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/bad_search1.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.8
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_52av论坛",
+   "name": "🔞52av论坛(XYQHiker)",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/52av2.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.8
+   },
+   "_g": "good"
+  },
+  {
+   "key": "JAVDAYTV",
+   "name": "🔞JAVDAYTV(XYQHiker)",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/javday.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "meh"
+  },
+  {
+   "key": "csp_XYQHiker_18jtv🔞",
+   "name": "🔞18jtv(XYQHiker)",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 0,
+   "ext": "./XYQHike/18jtv.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_xnxx",
+   "name": "🔞XNXX(XYQHiker)",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/xnxx.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_njavtv.com",
+   "name": "🔞Njavtv(XYQHiker)",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/njavtv.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "soft"
+  },
+  {
+   "key": "csp_XYQHiker_missav.app",
+   "name": "🔞MissAV.app",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/missav.app.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_nowavtv",
+   "name": "🔞NOWAVTV",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/nowavtv.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_91porn_asia",
+   "name": "🔞91porn_asia",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/91porn_asia.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.75
+   },
+   "_g": "soft"
+  },
+  {
+   "key": "csp_XYQHiker_jable",
+   "name": "🔞Jable④",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/jable.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "soft"
+  },
+  {
+   "key": "csp_XYQHiker_av6k",
+   "name": "🔞JAV6K",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/av6k.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_javffm",
+   "name": "🔞JAVFFM",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/javffm.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_javtsunami",
+   "name": "🔞javtsunami",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/javtsunami.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "soft"
+  },
+  {
+   "key": "色花堂",
+   "name": "🔞色花堂",
+   "type": 3,
+   "api": "csp_XBPQ",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 1,
+   "ext": "./XYQHike/sehuatang1.json",
+   "jar": "./jar/xyq.jar",
+   "_g": "soft"
+  },
+  {
+   "key": "csp_XYQHiker_苹果av",
+   "name": "🔞苹果av",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/pingguo.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_18av",
+   "name": "🔞18AV",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/18av.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_170av",
+   "name": "🔞170av",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/170av.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "meh"
+  },
+  {
+   "key": "csp_XYQHiker_300分类",
+   "name": "🔞300分类",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 1,
+   "ext": "./XYQHike/cat300.json",
+   "jar": "./jar/xyq.jar",
+   "_g": "soft"
+  },
+  {
+   "key": "csp_XYQHiker_444咖啡",
+   "name": "🔞444咖啡",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/coffee444.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "soft"
+  },
+  {
+   "key": "csp_XYQHiker_airav",
+   "name": "🔞AirAV",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/airav.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_hohoj",
+   "name": "🔞HOHOJ",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/hohoj.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_kanav",
+   "name": "🔞KANAV",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/kanav.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_MOTV",
+   "name": "🔞MOTV",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/motv.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_owoAV",
+   "name": "🔞OWOAV",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/owoav.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_porn87",
+   "name": "🔞porn87",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/porn87.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_pornhub",
+   "name": "🔞pornhub",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/pornhub.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_pornlulu",
+   "name": "🔞PornLuLu",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/pornlulu.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "soft"
+  },
+  {
+   "key": "csp_XYQHiker_qinav",
+   "name": "🔞Qinav",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/qinav.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_xHamster",
+   "name": "🔞xHamster",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/xHamster.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_xvideos",
+   "name": "🔞Xvideos",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/xvideos.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_18jav",
+   "name": "🔞18JAV(XYQHiker)",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/18jav.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "女优色库_b",
+   "name": "🔞女优色库",
+   "type": 3,
+   "api": "csp_XBPQ",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/actress.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "ratio": 1.7
+   },
+   "_g": "meh"
+  },
+  {
+   "key": "csp_XYQHiker_日日撸",
+   "name": "🔞日日撸",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/ririlu.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_台湾kiss",
+   "name": "🔞台湾kiss",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/twkiss.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_正妹AV",
+   "name": "🔞正妹AV",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/zhenmei.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_亚色影库",
+   "name": "🔞亚色影库",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/yasetube.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.8
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_朱古力",
+   "name": "🔞朱古力",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/zhuguli.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_杏吧视频",
+   "name": "🔞杏吧视频",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/xingba.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_丽丽AV",
+   "name": "🔞丽丽AV",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/liliav.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_黄色仓库123",
+   "name": "🔞黄色仓库123✈️🔗",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/hsck123.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "soft"
+  },
+  {
+   "key": "csp_XYQHiker_黄色仓库la",
+   "name": "🔞黄色仓库啦✈️🔗",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/hsckla.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "meh"
+  },
+  {
+   "key": "csp_XYQHiker_紫色成人",
+   "name": "🔞紫色成人",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/zise.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "csp_XYQHiker_酷爱成人网>",
+   "name": "🔞酷爱成人网✈️",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/kuai.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "soft"
+  },
+  {
+   "key": "csp_XYQHiker_鲨鱼av",
+   "name": "🔞鲨鱼av",
+   "type": 3,
+   "api": "csp_XYQHiker",
+   "searchable": 1,
+   "quickSearch": 0,
+   "filterable": 0,
+   "ext": "./XYQHike/shayuav.json",
+   "jar": "./jar/xyq.jar",
+   "style": {
+    "type": "rect",
+    "ratio": 1.6
+   },
+   "_g": "good"
+  },
+  {
+   "key": "zs_17c_tw",
+   "name": "🔞一起草 (17c.tw)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_17c_tw.json"
+  },
+  {
+   "key": "zs_17cap_cc",
+   "name": "🔞一起草 (17cap.cc)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_17cap_cc.json"
+  },
+  {
+   "key": "zs_17cap_life",
+   "name": "🔞一起草 (17cap.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_17cap_life.json"
+  },
+  {
+   "key": "zs_51avtv_com",
+   "name": "🔞51TV (51avtv.com)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_51avtv_com.json"
+  },
+  {
+   "key": "zs_51ch1_com",
+   "name": "🔞51吃瓜网 (51ch1.com)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_51ch1_com.json"
+  },
+  {
+   "key": "zs_91aidasai_com",
+   "name": "🔞91大赛 (91aidasai.com)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_91aidasai_com.json"
+  },
+  {
+   "key": "zs_91avtv_com",
+   "name": "🔞91TV (91avtv.com)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_91avtv_com.json"
+  },
+  {
+   "key": "zs_91dytv_com",
+   "name": "🔞成人抖音 (91dytv.com)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_91dytv_com.json"
+  },
+  {
+   "key": "zs_91wz_life",
+   "name": "🔞啪哩啪哩 (91wz.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_91wz_life.json"
+  },
+  {
+   "key": "zs_98tagn_life",
+   "name": "🔞色花堂 (98tagn.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_98tagn_life.json"
+  },
+  {
+   "key": "zs_98tamg_life",
+   "name": "🔞98堂 (98tamg.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_98tamg_life.json"
+  },
+  {
+   "key": "zs_98tang_life",
+   "name": "🔞98堂 (98tang.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_98tang_life.json"
+  },
+  {
+   "key": "zs_anw3_life",
+   "name": "🔞暗网TV (anw3.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_anw3_life.json"
+  },
+  {
+   "key": "zs_bianav_com",
+   "name": "🔞bianav (bianav.com)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_bianav_com.json"
+  },
+  {
+   "key": "zs_bilibili1_life",
+   "name": "🔞逼哩视频 (bilibili1.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_bilibili1_life.json"
+  },
+  {
+   "key": "zs_guazishqu_com",
+   "name": "🔞瓜子社区 (guazishqu.com)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_guazishqu_com.json"
+  },
+  {
+   "key": "zs_haijiaod_com",
+   "name": "🔞海角社区 (haijiaod.com)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_haijiaod_com.json"
+  },
+  {
+   "key": "zs_haijiaod_life",
+   "name": "🔞海角社区 (haijiaod.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_haijiaod_life.json"
+  },
+  {
+   "key": "zs_hdmqdj_com",
+   "name": "🔞黄豆短剧 (hdmqdj.com)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_hdmqdj_com.json"
+  },
+  {
+   "key": "zs_heitaoo_com",
+   "name": "🔞黑桃视频 (heitaoo.com)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_heitaoo_com.json"
+  },
+  {
+   "key": "zs_huanguoe_com",
+   "name": "🔞黄果短剧 (huanguoe.com)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_huanguoe_com.json"
+  },
+  {
+   "key": "zs_javtang_life",
+   "name": "🔞JAV色花堂 (javtang.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_javtang_life.json"
+  },
+  {
+   "key": "zs_juziavtv_com",
+   "name": "🔞桔子TV (juziavtv.com)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_juziavtv_com.json"
+  },
+  {
+   "key": "zs_laow3_life",
+   "name": "🔞老王视频 (laow3.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_laow3_life.json"
+  },
+  {
+   "key": "zs_madotang_life",
+   "name": "🔞麻豆堂 (madotang.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_madotang_life.json"
+  },
+  {
+   "key": "zs_madoue_life",
+   "name": "🔞麻豆传媒 (madoue.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_madoue_life.json"
+  },
+  {
+   "key": "zs_okxav_com",
+   "name": "🔞OKAV (okxav.com)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_okxav_com.json"
+  },
+  {
+   "key": "zs_sifangktv_one",
+   "name": "🔞私房AV (sifangktv.one)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_sifangktv_one.json"
+  },
+  {
+   "key": "zs_wge3_life",
+   "name": "🔞威哥视频 (wge3.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_wge3_life.json"
+  },
+  {
+   "key": "zs_wuxiants_life",
+   "name": "🔞无限臀山 (wuxiants.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_wuxiants_life.json"
+  },
+  {
+   "key": "zs_wuye_life",
+   "name": "🔞午夜TV (wuye.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_wuye_life.json"
+  },
+  {
+   "key": "zs_xduoxin_life",
+   "name": "🔞多杏TV (xduoxin.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_xduoxin_life.json"
+  },
+  {
+   "key": "zs_xfp8_life",
+   "name": "🔞性福啪 (xfp8.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_xfp8_life.json"
+  },
+  {
+   "key": "zs_xguetv_com",
+   "name": "🔞西瓜TV (xguetv.com)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_xguetv_com.json"
+  },
+  {
+   "key": "zs_xineba_life",
+   "name": "🔞杏吧视频 (xineba.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_xineba_life.json"
+  },
+  {
+   "key": "zs_yeshex_life",
+   "name": "🔞夜社视频 (yeshex.life)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_yeshex_life.json"
+  },
+  {
+   "key": "zs_yiqicao_fun",
+   "name": "🔞一起草 (yiqicao.fun)",
+   "type": 3,
+   "playerType": 2,
+   "api": "csp_XBPQ",
+   "jar": "./jar/xyqxbpq.jar",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "ext": "./json/zsite_yiqicao_fun.json"
   }
  ],
  "lives": [

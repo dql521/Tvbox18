@@ -1,12 +1,15 @@
-# Zaka 成人订阅 · 整合版
+# Zaka 成人订阅 · 整合版（误剔源修复版）
 
 TVBox 系壳（FongMi / 影视仓 / OK影视 / 蜂蜜影视等）用的成人影视订阅。
 点播源逐条实测过完整链路，直播是品牌成人台 7×24 真推流。
 
+本版共 **163 条点播源** + 24 路品牌成人台，另含 2 条秀场直播驱动。
+
 ## 结构
 
 ```
-index.json        主订阅，导入这一个就够
+index.json        主订阅，导入这一个就够（163 源）
+XYQHike/          44 条 HTML 采集规则（本地化，不依赖 GitHub）
 live.m3u          品牌成人台直播（24 路）
 live-p2p.m3u      P2P 直播（2 路）
 jar/              采集驱动
@@ -37,6 +40,9 @@ https://ghproxy.net/https://raw.githubusercontent.com/<用户名>/<仓库名>/ma
 - 采集源：任何 TVBox 系壳都能用
 - 脚本源（`js/` `plugin/`）：需要壳内置 python + quickjs。FongMi 官方版、蜂蜜影视支持；
   精简壳会自动跳过这类源，不影响其它源
+- XYQHiker 规则源（`XYQHike/`）：壳需要支持 `csp_XYQHiker`。包里已经带了驱动
+  `jar/xyq.jar`，源条目里也写了 jar 指向，一般不用管；万一你的壳只认内置驱动，
+  这批会显示加载失败，其它源不受影响
 
 ## 说明
 
