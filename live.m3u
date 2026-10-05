@@ -1,0 +1,49 @@
+#EXTM3U
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 松視3台 [8.9M 1080P]
+http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/90.ts
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 彩虹E台 [10.0M 1080P]
+http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/87.ts
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 松視1台 [9.0M 1080P]
+http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/88.ts
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 松視2台 [8.2M 1080P]
+http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/89.ts
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 彩虹電影台 [7.6M 720P]
+http://srteamhls.gotvsports.com:41111/w8chslnwkcidbh3r/index.m3u8
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 松視1台 (备用) [7.4M 720P]
+http://srteamhls.gotvsports.com:41111/wryqzmqlxxmi1zs2/index.m3u8
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 JStar極限電影台 [5.2M 720P]
+http://srteamhls.gotvsports.com:41111/s0doso0ydxe3yk2s/index.m3u8
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 松視3台 (备用) [10.1M 720P]
+http://srteamhls.gotvsports.com:41111/nzz5mti2l46gknhp/index.m3u8
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 彩虹R [6.3M 720P]
+http://srteamhls.gotvsports.com:41111/f35jovi7msk6dd4p/index.m3u8
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 彩虹E台 (备用) [8.0M 720P]
+http://srteamhls.gotvsports.com:41111/gk1lhs34k93w0egd/index.m3u8
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 松視2台 (备用) [8.1M 720P]
+http://srteamhls.gotvsports.com:41111/5bllcktdn92dudy6/index.m3u8
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 潘朵拉玩美台 [9.4M 1080P]
+http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/86.ts
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 松視4台
+http://166.88.186.26/live/ss4.m3u8
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 香蕉台 [8.5M 1080P]
+http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/117.ts
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 驚艷成人電影台 [9.6M 1080P]
+http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/85.ts
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 潘朵拉粉紅台 [7.2M 720P]
+http://srteamhls.gotvsports.com:41111/t08gdnfdy3rycim0/index.m3u8
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 潘朵拉玩美台 (备用) [7.8M 720P]
+http://srteamhls.gotvsports.com:41111/04v9iycrpkoelo1b/index.m3u8
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 樂活頻道 [7.6M 720P]
+http://srteamhls.gotvsports.com:41111/i0a2mditbdzv0h4e/index.m3u8
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 驚艷成人電影台 (备用) [78.8M 1080P]
+http://ctrl.yunshipin.bbroot.com:8080/streams/ds7fcf8th2/gc/playlist.m3u8
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 HOT [9.2M 720P]
+http://srteamhls.gotvsports.com:41111/krxh0hci5hfbsq7o/index.m3u8
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 Happy [4.5M 720P]
+http://srteamhls.gotvsports.com:41111/ynmiv1i5as4k1oue/index.m3u8
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 奥视 HD (2台) [1.2M 720P]
+http://125.227.210.55:1022/VideoInput/play.ts
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 麻豆传媒映画 (Mudou Media) [1.4M 720P]
+http://125.227.210.55:1009/VideoInput/play.ts
+#EXTINF:-1 group-title="台湾品牌成人台",🔞 台湾成人台 HD (未标识) [2.0M 720P]
+http://125.227.210.55:1023/VideoInput/play.ts

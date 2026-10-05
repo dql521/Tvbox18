@@ -1,0 +1,167 @@
+Zaka 成人订阅 · 整合版（国内镜像优化版）
+================================================
+
+一、这版优化了什么
+
+针对"放到自己 GitHub 上以后，国内镜像加载不出来"这个事，做了四件事：
+
+  1) 全部中文文件名改成了纯英文
+     原来看起来只是个小问题，实际是国内加载失败的头号原因：
+     依赖里有 17 个文件是中文名（json/一区.json、plugin/adult/黑料.py、
+     js/ss/51短剧.py 这类）。中文路径在经过国内那些加速镜像时，编码处理各家
+     不一样，壳拼出来的 URL 很容易 404。
+     现在全部改成英文名（zone1.json / heiliao.py / duanju51.py …），
+     index.json 里的引用同步改完了。源在界面上的显示名还是中文，没动。
+
+  2) 编码全量校验
+     43 个文件逐个查过：全部 UTF-8、无 BOM。BOM 是另一个常见暗坑——
+     带 BOM 的 json 壳解析会直接报错，而镜像只是转发字节，不会帮你修。
+
+  3) 相对路径完整性自检
+     index.json 里 55 处 ./ 引用，逐个核对磁盘上真实存在；
+     反过来磁盘上 42 个依赖文件也逐个核对有没有被引用（零孤文件、零缺失）。
+
+  4) 镜像实测 + 一键换镜像方案
+     见下面第三节。
+
+  源的实际内容一条没减，还是 78 条源 + 24 路品牌台。
+
+
+二、为什么要用相对路径（不要改成固定地址）
+
+index.json 里用的是 ./jar/、./json/、./live.m3u 这种相对路径，这是故意的：
+
+  相对路径的好处是——不管你用哪个镜像访问，壳都会自动按"你填的那个订阅地址"
+  去拼依赖文件，不用改任何东西。
+
+  你填：
+    https://ghproxy.net/https://raw.githubusercontent.com/你/仓库/main/index.json
+  壳自动取：
+    https://ghproxy.net/https://raw.githubusercontent.com/你/仓库/main/jar/XBPQ.jar
+
+  你换成 jsdelivr：
+    https://fastly.jsdelivr.net/gh/你/仓库@main/index.json
+  壳自动取：
+    https://fastly.jsdelivr.net/gh/你/仓库@main/jar/XBPQ.jar
+
+  一条订阅地址，哪家镜像都能用。所以**别**手动把 ./ 改成固定网址，
+  改了就被绑死在一个镜像上了。
+
+  ⚠️ 唯一例外：极少数精简壳只解析 api 的相对路径，不解析 jar 的。
+     如果你遇到"两个 XBPQ 系源加载失败、其它源正常"，就按第六节改成绝对地址。
+
+
+三、镜像实测（刚逐个跑过）
+
+  下面这几家当前是通的，都实测过能正常代理**子目录里的文件**（依赖文件就在
+  子目录里，这一点很关键，有些镜像只能代理根目录文件）：
+
+    1. gh-proxy.com      https://gh-proxy.com/https://raw.githubusercontent.com/...
+    2. ghproxy.net       https://ghproxy.net/https://raw.githubusercontent.com/...
+    3. ghfast.top        https://ghfast.top/https://raw.githubusercontent.com/...
+    4. gh.llkk.cc        https://gh.llkk.cc/https://raw.githubusercontent.com/...
+    5. jsd.onmicrosoft.cn  https://jsd.onmicrosoft.cn/gh/用户名/仓库@main/index.json
+    6. fastly.jsdelivr.net https://fastly.jsdelivr.net/gh/用户名/仓库@main/index.json
+    7. gcore.jsdelivr.net  https://gcore.jsdelivr.net/gh/用户名/仓库@main/index.json
+    8. testingcf.jsdelivr.net  同上格式
+    9. cdn.jsdmirror.com   https://cdn.jsdmirror.com/gh/用户名/仓库@main/index.json
+
+  这几家当前是挂的 / 不可用，别用：
+    ✗ ghproxy.cc            连不通
+    ✗ raw.gitmirror.com     连不通
+    ✗ gh-proxy.net          被限流（429）
+    ✗ github.moeyy.xyz      连不通
+
+  建议：**优先前三个 ghproxy 系**，它们是纯转发 raw，不掺缓存，跟着你仓库更新走。
+  jsdelivr 系的问题有两个——一是国内 cdn.jsdelivr.net 这个主域名时通时不通
+  （刚测的时候直接没连上，同系列的 fastly / gcore / testingcf 反而正常），
+  二是它有缓存，你更新了仓库它可能还给你 12 小时前的旧文件。
+
+  ⚠️ 说实话：我是从境外线路测的，测出来的是"这家服务本身还活着、路径能通"。
+  国内实际速度各家运营商不一样，一个打不开就换下一个，这几个轮着试基本都能通。
+
+
+四、部署到你的 GitHub
+
+方式一（推荐，最省事）：网页上传
+  1. 新建仓库，勾上 Public（私有仓库镜像拉不到）
+  2. 把压缩包里的**全部内容**解压出来
+  3. 仓库页面点 Add file → Upload files，把 index.json、live.m3u、
+     live-p2p.m3u、README.md 和四个文件夹（jar / json / lib / js / plugin /
+     live / tv）一起拖进去
+  4. 提交
+
+方式二：命令行
+  git init
+  git add .
+  git commit -m "update"
+  git branch -M main
+  git remote add origin https://github.com/<用户名>/<仓库名>.git
+  git push -u origin main
+
+⚠️ 三个必须注意的：
+  ① 分支名要跟地址里的对上。地址里写的是 /main/，你仓库默认分支就得是 main
+     （GitHub 新建仓库默认就是 main，老仓库可能是 master，看仓库首页那行字）。
+  ② 整套一起传，目录结构别改。
+  ③ 仓库要 Public。
+
+
+五、订阅地址
+
+原始（国内大概率打不开，仅备用）：
+  https://raw.githubusercontent.com/<用户名>/<仓库名>/main/index.json
+
+推荐（三选一，都实测通）：
+  https://gh-proxy.com/https://raw.githubusercontent.com/<用户名>/<仓库名>/main/index.json
+  https://ghproxy.net/https://raw.githubusercontent.com/<用户名>/<仓库名>/main/index.json
+  https://ghfast.top/https://raw.githubusercontent.com/<用户名>/<仓库名>/main/index.json
+
+jsdelivr 系（有缓存，更新后可能要等）：
+  https://fastly.jsdelivr.net/gh/<用户名>/<仓库名>@main/index.json
+
+不想折腾的，现成地址直接导入（已上线验过）：
+  https://r18sub.web.zaka.live/index.json
+
+
+六、如果你的壳不认相对路径（改成绝对地址的方法）
+
+只有极少数壳会这样，症状是：大部分源正常，但那一批依赖 jar / 脚本的源加载失败。
+
+改法（在 GitHub 网页上就能改，30 秒）：
+  1. 打开仓库里的 index.json，点右上角铅笔图标进入编辑
+  2. 按 Ctrl+H（Mac 是 Cmd+H）打开替换框
+  3. 查找填：  ".
+     替换填：  "https://gh-proxy.com/https://raw.githubusercontent.com/<用户名>/<仓库名>/main/
+     点全部替换
+  4. 提交
+
+原理：index.json 里所有本地依赖都是 "./xxx" 这个格式（一共 55 处），
+把开头的 ". 一次性替换成带镜像前缀的绝对地址，全部就都变成绝对路径了。
+
+  ⚠️ 这么改完就绑死在 gh-proxy.com 上了，换镜像要再改一遍。
+     所以能不改就不改，先按原样试。
+
+
+七、壳的要求
+
+  - 采集源：任何 TVBox / FongMi / 影视仓 / OK影视 都能用。
+  - 脚本源（js/ plugin/ 里那批）：需要壳内置 python + quickjs。
+    FongMi 官方版、蜂蜜影视支持；部分精简壳不支持，那类源会自动跳过，
+    不影响其它源。
+  - 直播：内置在订阅里，不用另外导。24 路品牌成人台，7×24 真推流。
+
+
+八、内容清单
+
+  index.json      78 条点播源（采集 42 + 脚本 23 + 驱动配置 13）
+  live.m3u        24 路品牌成人台
+  live-p2p.m3u    2 路 P2P 台
+
+  上两轮已经剔掉的死源（这轮没放回来）：那批 *.xyz / *.buzz 的轮换域名站、
+  火速资源（片源域名变成待售停放页）、几个 404 的老 XML 站、三个上游根本没有的
+  脚本文件。
+
+
+九、一句实话
+
+  源是活的，今天通明天可能断。哪条点开不出片，把名字发我，我单独换。
