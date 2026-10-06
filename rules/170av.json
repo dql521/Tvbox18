@@ -1,5 +1,5 @@
 {
-//永久地址:https://www.190av.cc/
+
 "规则名": "170AV",
 "规则作者": "飞鱼",
 "请求头参数": "PC_UA",
@@ -18,8 +18,7 @@
 "首页片单链接加后缀": "",
 "分类起始页码": "1",
 "分类链接": "https://www.170av.cc{cateId}-{catePg}.html",
-//https://iook1.cc/vodtype/1-2.html
-//https://iook1.cc/label/new/page/1.html
+
 "分类名称": "国产视频&亚洲情色&无码专区&韩国视频&欧美视频&偷拍自拍&中文字幕&三级伦理&卡通动漫&丝袜美腿&制服师生&强奸乱伦&人妻熟女&潮吹喷射&男同女同&变态另类&美女写真&人妖系列&巨乳肥臀&自淫系列&群交系列&口交颜射&东京热&一本道&加勒比&JAV高清&SM捆绑&VR性爱",
 "分类名称替换词": "/vodtype/23&/vodtype/21&/vodtype/22&/vodtype/24&/vodtype/25&/vodtype/26&/vodtype/27&/vodtype/28&/vodtype/29&/vodtype/30&/vodtype/31&/vodtype/32&/vodtype/33&/vodtype/34&/vodtype/35&/vodtype/36&/vodtype/37&/vodtype/38&/vodtype/39&/vodtype/40&/vodtype/41&/vodtype/42&/vodtype/43&/vodtype/44&/vodtype/48&/vodtype/45&/vodtype/46&/vodtype/47",
 "分类截取模式": "1",
@@ -48,10 +47,6 @@
 "直接播放链接加后缀": "",
 "直接播放直链视频请求头": "",
 
-
-
-
-//下面是选集规则，直接播放的不用下面
 "线路列表数组规则":"",
 "线路列表":"",
 "线路标题":"",
@@ -71,13 +66,6 @@
 "地区详情":"",
 "演员详情":"",
 "简介详情":"",
-
-
-
-
-
-
-
 
 "分析MacPlayer": "0",
 "是否开启手动嗅探": "1",

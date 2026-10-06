@@ -148,7 +148,7 @@ function home(I1iiIiIl) {
 }
 function parseM3u(iIi1Ii1I, I1IlIIIi) {
   let iI1iiIii = {};
-  let iiI11111 = /(#EXTINF:.+?),([^,]+?)\s*\n(.+?)\s*\n/g;
+  let iiI11111 = /(#EXTINF:[^\n]*?)?[,\s]*([^,\n\r]+?)\s*[,\n]\s*(https?:\/\/[^\s\n\r]+)/g;
   let ii1iilil = null;
   while ((ii1iilil = iiI11111[Ii1l1III("16")](iIi1Ii1I)) != null) {
     let lllli1iI = ii1iilil[0x1];

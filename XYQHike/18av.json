@@ -1,7 +1,5 @@
 {
-//发布页https://mm18vc.com/
-//https://18av.mm-cg.com/
-//https://18av.mm-cg.com
+
 "规则名": "18AV-XYQHiker",
 "规则作者": "飞鱼",
 "请求头参数": "PC_UA",
@@ -19,14 +17,7 @@
 "首页片单链接加前缀": "",
 "首页片单链接加后缀": "",
 "分类起始页码": "1",
-//"分类链接": "https://XXXXX.com/vodtype/{cateId}-{catePg}/",
-    //{cateId}分类id
-	//{area}地区
-	//{by}排序
-	//{class}剧情
-	//{lang}语言
-	//{catePg}翻页序列号
-	//{year}日期
+
 "分类链接": "https://18av.mm-cg.com/zh/{cateId}/all/{catePg}.html",
 "分类名称": "中文字幕&无码&动漫&自拍&",
 "分类名称替换词": "chinese_list&uncensored_list&animation_list&dt_list&",
@@ -56,13 +47,10 @@
 "直接播放链接加后缀": "",
 "直接播放直链视频请求头": "",
 
-
-
 "分析MacPlayer": "0",
 "是否开启手动嗅探": "1",
 "手动嗅探视频链接关键词": ".m3u8",
 "手动嗅探视频链接过滤词": "baidu.com",
-
 
 "筛选数据":{}
 

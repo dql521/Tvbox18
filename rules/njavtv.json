@@ -1,49 +1,48 @@
 {
-   //永久地址https://njav
+
     "规则名": "njav-XYQHiker",
     "规则作者": "飞鱼",
     "请求头参数":"MOBILE",
     "网页编码格式":"UTF-8",
     "图片是否需要代理":"0",
     "是否开启获取首页数据":"1",
-	 //首页推荐数据获取链接
+
     "首页推荐链接": "https://www.njav.com/zh/new-release",
-    //首页推荐列表数组截取。
+
     "首页列表数组规则": ".grid.grid-cols-2",
-    //首页推荐片单列表数组定位。
+
     "首页片单列表数组规则": ".thumbnail.group",
-    //首页推荐片单信息jsoup与正则截取写法切换，只作用于html网页，1为jsoup写法(默认)，0为正则截取写法
+
     "首页片单是否Jsoup写法":"1",
-    //下面这六个首页数据如果不填将调用分类那截取的配置（片单写法需一致且取值也得一致）。
-    //首页片单标题
+
     "首页片单标题": ".text-secondary&&Text",
-    //首页推荐片单链接
+
     "首页片单链接": "a&&href",
-    //首页推荐片单图片，支持自定义图片链接
+
     "首页片单图片": "img&&data-src",
-    //首页推荐片单副标题
+
     "首页片单副标题":"a,1&&Text+' ⏱️'+.bg-gray-800&&Text",
-    //首页推荐片单链接补前缀  
+
     "首页片单链接加前缀": "",
-    //首页推荐片单链接补后缀
+
     "首页片单链接加后缀": "",
     "分类起始页码": "1",
-    //"分类链接": "https://www.l0l.tv/index.php/vod/show/id/{cateId}/page/{catePg}.html",
+
 	"分类链接": "https://njavtv.com/{cateId}?page={catePg}",
     "分类名称": "中文字幕&日本AV▽&素人&无码影片&国产AV&更多分类",
     "分类名称替换词": "dm265/cn/chinese-subtitle&dm513/cn/new&dm23/cn/siro&dm561/cn/uncensored-leak&dm34/cn/madou&dm94/cn/genres/%E9%AB%98%E6%B8%85",
-    //"筛选数据":{},
+
     "分类截取模式": "1",
     "分类列表数组规则": ".grid.grid-cols-2&&.thumbnail.group",
     "分类片单是否Jsoup写法":"1",
     "分类片单标题": ".text-secondary&&Text",
-    "分类片单链接": "a&&href",//替换规则
+    "分类片单链接": "a&&href",
     "分类片单图片": "img&&data-src",
     "分类片单副标题":"a,1&&Text+' ⏱️'+a,2&&Text",
     "分类片单链接加前缀": "",
     "分类片单链接加后缀": "",
     "搜索请求头参数":"User-Agent$MOBILE",
-    
+
     "搜索链接": "https://njavtv.com/cn/search/{wd}",
     "POST请求数据":"0",
     "搜索截取模式": "1",
@@ -55,12 +54,12 @@
     "搜索片单副标题":"a,1&&Text+' ⏱️'+.bg-gray-800&&Text",
     "搜索片单链接加前缀": "",
     "搜索片单链接加后缀": "",
-       //--------
+
          "链接是否直接播放": "1",
 "直接播放链接加前缀": "",
 "直接播放链接加后缀": "",
 "直接播放直链视频请求头": "",
-//-------
+
     "详情是否Jsoup写法":"1",
     "类型详情": ".content&&.detail-item&&.genre&&Text",
     "年代详情": ".content&&.detail-item&&span,3&&Text",
@@ -81,97 +80,93 @@
     "是否开启手动嗅探":"1",
     "手动嗅探视频链接关键词":"m3u8#.m3u8",
     "手动嗅探视频链接过滤词":".html#=http",
-	
+
 	"筛选数据":{
 "dm513/cn/new":[
   {"key":"cateId","name":"分类","value":[
-{"v":"dm513/cn/new","n":"最近更新"}, 
-{"v":"dm509/cn/release","n":"新作上市"}, 
-{"v":"dm561/cn/uncensored-leak","n":"无码流出"}, 
-{"v":"cn/actresses","n":"女优一览"}, 
-{"v":"cn/actresses/ranking","n":"女优排行 SEP 2024"}, 
-{"v":"cn/genres","n":"类型"}, 
-{"v":"cn/makers","n":"发行商"}, 
-{"v":"cn/genres/VR","n":"VR"}, 
-{"v":"dm242/cn/today-hot","n":"今日热门"}, 
-{"v":"dm168/cn/weekly-hot","n":"本週热门"}, 
+{"v":"dm513/cn/new","n":"最近更新"},
+{"v":"dm509/cn/release","n":"新作上市"},
+{"v":"dm561/cn/uncensored-leak","n":"无码流出"},
+{"v":"cn/actresses","n":"女优一览"},
+{"v":"cn/actresses/ranking","n":"女优排行 SEP 2024"},
+{"v":"cn/genres","n":"类型"},
+{"v":"cn/makers","n":"发行商"},
+{"v":"cn/genres/VR","n":"VR"},
+{"v":"dm242/cn/today-hot","n":"今日热门"},
+{"v":"dm168/cn/weekly-hot","n":"本週热门"},
 {"v":"dm207/cn/monthly-hot","n":"本月热门"}
 ]
 }],
 "dm23/cn/siro":[
   {"key":"cateId","name":"分类","value":[
-{"v":"dm23/cn/siro","n":"SIRO"}, 
-{"v":"dm20/cn/luxu","n":"LUXU"}, 
-{"v":"dm17/cn/gana","n":"GANA"}, 
-{"v":"dm14/cn/maan","n":"PRESTIGE PREMIUM"}, 
-{"v":"dm23/cn/scute","n":"S-CUTE"}, 
+{"v":"dm23/cn/siro","n":"SIRO"},
+{"v":"dm20/cn/luxu","n":"LUXU"},
+{"v":"dm17/cn/gana","n":"GANA"},
+{"v":"dm14/cn/maan","n":"PRESTIGE PREMIUM"},
+{"v":"dm23/cn/scute","n":"S-CUTE"},
 {"v":"dm19/cn/ara","n":"ARA"}
 ]}],
 "dm561/cn/uncensored-leak":[
   {"key":"cateId","name":"分类","value":[
-{"v":"dm561/cn/uncensored-leak","n":"无码流出"}, 
-{"v":"dm95/cn/fc2","n":"FC2"}, 
-{"v":"dm626/cn/heyzo","n":"HEYZO"}, 
-{"v":"dm29/cn/tokyohot","n":"东京热"}, 
-{"v":"dm57467/cn/1pondo","n":"一本道"}, 
-{"v":"dm117895/cn/caribbeancom","n":"Caribbeancom"}, 
-{"v":"dm1412/cn/caribbeancompr","n":"Caribbeancompr"}, 
-{"v":"dm51255/cn/10musume","n":"10musume"}, 
-{"v":"dm666/cn/pacopacomama","n":"pacopacomama"}, 
-{"v":"dm135/cn/gachinco","n":"Gachinco"}, 
-{"v":"dm26/cn/xxxav","n":"XXX-AV"}, 
-{"v":"dm24/cn/marriedslash","n":"人妻斩"}, 
-{"v":"dm19/cn/naughty4610","n":"顽皮 4610"}, 
+{"v":"dm561/cn/uncensored-leak","n":"无码流出"},
+{"v":"dm95/cn/fc2","n":"FC2"},
+{"v":"dm626/cn/heyzo","n":"HEYZO"},
+{"v":"dm29/cn/tokyohot","n":"东京热"},
+{"v":"dm57467/cn/1pondo","n":"一本道"},
+{"v":"dm117895/cn/caribbeancom","n":"Caribbeancom"},
+{"v":"dm1412/cn/caribbeancompr","n":"Caribbeancompr"},
+{"v":"dm51255/cn/10musume","n":"10musume"},
+{"v":"dm666/cn/pacopacomama","n":"pacopacomama"},
+{"v":"dm135/cn/gachinco","n":"Gachinco"},
+{"v":"dm26/cn/xxxav","n":"XXX-AV"},
+{"v":"dm24/cn/marriedslash","n":"人妻斩"},
+{"v":"dm19/cn/naughty4610","n":"顽皮 4610"},
 {"v":"dm22/cn/naughty0930","n":"顽皮 0930"}
 ]}],
 
-
-
-
-
 "dm34/cn/madou":[
   {"key":"cateId","name":"分类","value":[
-{"v":"dm34/cn/madou","n":"麻豆传媒"}, 
-{"v":"dm17/cn/twav","n":"TWAV"}, 
+{"v":"dm34/cn/madou","n":"麻豆传媒"},
+{"v":"dm17/cn/twav","n":"TWAV"},
 {"v":"dm15/cn/furuke","n":"Furuke"}
 ]}],
 "dm94/cn/genres/%E9%AB%98%E6%B8%85":[
   {"key":"cateId","name":"分类","value":[
-{"v":"dm94/cn/genres/%E9%AB%98%E6%B8%85","n":"高清"}, 
-{"v":"dm136/cn/genres/%E7%8B%AC%E5%AE%B6","n":"独家"}, 
-{"v":"dm126/cn/genres/%E4%B8%AD%E5%87%BA","n":"中出"}, 
-{"v":"dm111/cn/genres/%E5%B7%A8%E4%B9%B3","n":"巨乳"}, 
-{"v":"dm106/cn/genres/%E5%8D%95%E4%BD%93%E4%BD%9C%E5%93%81","n":"单体作品"}, 
-{"v":"dm67/cn/genres/%E4%BA%BA%E5%A6%BB","n":"人妻"}, 
-{"v":"dm106/cn/genres/%E7%86%9F%E5%A5%B3","n":"熟女"}, 
-{"v":"dm95/cn/genres/%E7%B4%A0%E4%BA%BA","n":"素人"}, 
-{"v":"dm433/cn/genres/%E7%BE%8E%E5%B0%91%E5%A5%B3","n":"美少女"}, 
-{"v":"dm480/cn/genres/%E9%AA%91%E4%B9%98","n":"骑乘"}, 
-{"v":"dm1295/cn/genres/%E5%8F%A3%E4%BA%A4","n":"口交"}, 
-{"v":"dm310/cn/genres/%E5%A4%9A%E4%BA%BA%E8%BF%90%E5%8A%A8","n":"多人运动"}, 
-{"v":"dm72/cn/genres/%E8%96%84%E6%A0%BC","n":"薄格"}, 
-{"v":"dm728/cn/genres/4%E5%B0%8F%E6%97%B6%E4%BB%A5%E4%B8%8A","n":"4小时以上"}, 
-{"v":"dm312/cn/genres/%E7%97%B4%E5%A5%B3","n":"痴女"}, 
-{"v":"dm2439/cn/genres/%E5%A5%B3%E9%AB%98%E4%B8%AD%E7%94%9F","n":"女高中生"}, 
-{"v":"dm782/cn/genres/%E5%90%88%E9%9B%86","n":"合集"}, 
-{"v":"dm129/cn/genres/%E6%BD%AE%E5%90%B9","n":"潮吹"}, 
-{"v":"dm967/cn/genres/%E8%87%AA%E6%8B%8D","n":"自拍"}, 
-{"v":"dm566/cn/genres/%E4%B9%B3%E4%BA%A4","n":"乳交"}, 
-{"v":"dm105/cn/genres/%E6%81%8B%E7%89%A9%E7%99%96","n":"恋物癖"}, 
-{"v":"dm754/cn/genres/%E8%8B%97%E6%9D%A1","n":"苗条"}, 
-{"v":"dm294/cn/genres/%E4%BC%81%E5%88%92","n":"企划"}, 
-{"v":"dm189/cn/genres/%E6%90%AD%E8%AE%AA","n":"搭讪"}, 
-{"v":"dm483/cn/genres/%E5%81%B7%E6%8B%8D","n":"偷拍"}, 
-{"v":"dm36/cn/genres/%E4%B9%B1%E4%BC%A6","n":"乱伦"}, 
-{"v":"dm212/cn/genres/%E7%BE%8E%E4%B9%B3","n":"美乳"}, 
-{"v":"dm315/cn/genres/%E9%A2%9C%E5%B0%84","n":"颜射"}, 
-{"v":"dm490/cn/genres/%E8%87%AA%E6%85%B0","n":"自慰"}, 
-{"v":"dm900/cn/genres/%E6%B7%AB%E4%B9%B1","n":"淫乱"}, 
-{"v":"dm724/cn/genres/NTR","n":"NTR"}, 
-{"v":"dm82/cn/genres/%E6%89%8B%E6%B7%AB","n":"手淫"}, 
-{"v":"dm91/cn/genres/%E5%89%A7%E6%83%85","n":"剧情"}, 
-{"v":"dm142/cn/genres/%E6%8B%98%E6%9D%9F","n":"拘束"}, 
-{"v":"dm783/cn/genres/%E5%A7%90%E5%A7%90","n":"姐姐"}, 
+{"v":"dm94/cn/genres/%E9%AB%98%E6%B8%85","n":"高清"},
+{"v":"dm136/cn/genres/%E7%8B%AC%E5%AE%B6","n":"独家"},
+{"v":"dm126/cn/genres/%E4%B8%AD%E5%87%BA","n":"中出"},
+{"v":"dm111/cn/genres/%E5%B7%A8%E4%B9%B3","n":"巨乳"},
+{"v":"dm106/cn/genres/%E5%8D%95%E4%BD%93%E4%BD%9C%E5%93%81","n":"单体作品"},
+{"v":"dm67/cn/genres/%E4%BA%BA%E5%A6%BB","n":"人妻"},
+{"v":"dm106/cn/genres/%E7%86%9F%E5%A5%B3","n":"熟女"},
+{"v":"dm95/cn/genres/%E7%B4%A0%E4%BA%BA","n":"素人"},
+{"v":"dm433/cn/genres/%E7%BE%8E%E5%B0%91%E5%A5%B3","n":"美少女"},
+{"v":"dm480/cn/genres/%E9%AA%91%E4%B9%98","n":"骑乘"},
+{"v":"dm1295/cn/genres/%E5%8F%A3%E4%BA%A4","n":"口交"},
+{"v":"dm310/cn/genres/%E5%A4%9A%E4%BA%BA%E8%BF%90%E5%8A%A8","n":"多人运动"},
+{"v":"dm72/cn/genres/%E8%96%84%E6%A0%BC","n":"薄格"},
+{"v":"dm728/cn/genres/4%E5%B0%8F%E6%97%B6%E4%BB%A5%E4%B8%8A","n":"4小时以上"},
+{"v":"dm312/cn/genres/%E7%97%B4%E5%A5%B3","n":"痴女"},
+{"v":"dm2439/cn/genres/%E5%A5%B3%E9%AB%98%E4%B8%AD%E7%94%9F","n":"女高中生"},
+{"v":"dm782/cn/genres/%E5%90%88%E9%9B%86","n":"合集"},
+{"v":"dm129/cn/genres/%E6%BD%AE%E5%90%B9","n":"潮吹"},
+{"v":"dm967/cn/genres/%E8%87%AA%E6%8B%8D","n":"自拍"},
+{"v":"dm566/cn/genres/%E4%B9%B3%E4%BA%A4","n":"乳交"},
+{"v":"dm105/cn/genres/%E6%81%8B%E7%89%A9%E7%99%96","n":"恋物癖"},
+{"v":"dm754/cn/genres/%E8%8B%97%E6%9D%A1","n":"苗条"},
+{"v":"dm294/cn/genres/%E4%BC%81%E5%88%92","n":"企划"},
+{"v":"dm189/cn/genres/%E6%90%AD%E8%AE%AA","n":"搭讪"},
+{"v":"dm483/cn/genres/%E5%81%B7%E6%8B%8D","n":"偷拍"},
+{"v":"dm36/cn/genres/%E4%B9%B1%E4%BC%A6","n":"乱伦"},
+{"v":"dm212/cn/genres/%E7%BE%8E%E4%B9%B3","n":"美乳"},
+{"v":"dm315/cn/genres/%E9%A2%9C%E5%B0%84","n":"颜射"},
+{"v":"dm490/cn/genres/%E8%87%AA%E6%85%B0","n":"自慰"},
+{"v":"dm900/cn/genres/%E6%B7%AB%E4%B9%B1","n":"淫乱"},
+{"v":"dm724/cn/genres/NTR","n":"NTR"},
+{"v":"dm82/cn/genres/%E6%89%8B%E6%B7%AB","n":"手淫"},
+{"v":"dm91/cn/genres/%E5%89%A7%E6%83%85","n":"剧情"},
+{"v":"dm142/cn/genres/%E6%8B%98%E6%9D%9F","n":"拘束"},
+{"v":"dm783/cn/genres/%E5%A7%90%E5%A7%90","n":"姐姐"},
 {"v":"dm141/cn/genres/%E7%BE%9E%E8%BE%B1","n":"羞辱"},
 {"v":"dm440/cn/genres/%E7%BA%AA%E5%BD%95%E7%89%87","n":"纪录片"},
 {"v":"dm575/cn/genres/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94","n":"角色扮演"},
@@ -353,9 +348,6 @@
 {"v":"dm4/cn/genres/%E9%A3%8E%E5%90%95","n":"风吕"},
 {"v":"dm11/cn/genres/%E7%AC%AC%E4%B8%80%E6%9E%AA","n":"第一枪"},
 {"v":"cn/genres/Lolita","n":"Lolita"}
-//https://njavtv.com/cn/genres?page=6分类到六页
-//.grid.grid-cols-2&&a:not(:contains(条影片))
-
 
 ]}]
 ,
@@ -369,7 +361,6 @@
   {"key":"cateId","name":"分类","value":[
 {"v":"28","n":"全部"},
 {"v":"51","n":"日本中字"}
-
 
 ]}]
 

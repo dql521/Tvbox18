@@ -282,8 +282,7 @@
    "api": "https://aosikazy.com/api.php/provide/vod/",
    "searchable": 1,
    "quickSearch": 1,
-   "filterable": 1,
-   "ext": "proxy"
+   "filterable": 1
   },
   {
    "key": "lf_js_lf_live",

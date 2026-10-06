@@ -16,7 +16,7 @@
 "首页片单链接加前缀": "",
 "首页片单链接加后缀": "",
 "分类起始页码": "1",
-//"分类链接": "https://hscangku.com/vodtype/{cateId}-{catePg}/",
+
 "分类链接": "https://www.javffm.com/drama/page/{catePg}/?orderby={by}&tvtype={cateId}",
 "分类名称": "全部&自拍&无码&欧美&动画&国产&伦理&中文字幕",
 "分类名称替换词": "&6&7&porn-2&5&chinese-av-porn&porn&chinese-subtitles",
@@ -46,13 +46,10 @@
 "直接播放链接加后缀": "",
 "直接播放直链视频请求头": "",
 
-
-
 "分析MacPlayer": "0",
 "是否开启手动嗅探": "1",
 "手动嗅探视频链接关键词": ".m3u8",
 "手动嗅探视频链接过滤词": "baidu.com",
-
 
 "筛选数据":{
 "":[

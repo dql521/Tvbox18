@@ -7,6 +7,7 @@ import re
 import sys
 import json
 import ssl
+import html as html_mod
 import urllib.parse
 import urllib.request
 
@@ -15,6 +16,13 @@ from base.spider import Spider
 
 MOBILE_UA = ("Mozilla/5.0 (Linux; Android 13; Mobile) AppleWebKit/537.36 "
              "(KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36")
+
+# 各站广告位/播放器示例片特征：命中即丢弃，避免"进详情页只播几秒广告"
+AD_VIDEO_PAT = re.compile(
+    r'artplayer\.org|/assets/sample/|/sample/test|/test\d*\.mp4|'
+    r'/media/ads/|/ads?/[^/]*?\.(?:mp4|m3u8)|madouui\.com|18link\.vip|'
+    r'/advert|promo\.mp4|prevideo|preview\.mp4',
+    re.I)
 
 
 def pick(text, rule):
@@ -197,6 +205,78 @@ class Spider(Spider):
     def destroy(self):
         return
 
+    # ---------- 抗广告位 ----------
+    A_RE = re.compile(r'<a\b[^>]*?href\s*=\s*["\']([^"\']+)["\']', re.I)
+
+    def _hostname(self):
+        m = re.match(r'https?://([^/]+)', self.host or '')
+        return m.group(1).lower() if m else ''
+
+    def _is_internal(self, u):
+        """判断链接是否指向本站(相对路径/同域)"""
+        u = str(u or '').strip()
+        if not u:
+            return False
+        if u.startswith(('/', '?', '#', './', '../')):
+            return True
+        if u.startswith('//'):
+            return True
+        h = self._hostname()
+        if h and h in u.lower():
+            return True
+        return False
+
+    def _anti_ad(self, block):
+        """列表块常被插广告位(外链)。
+        块首链接指向站外时：后移到块内第一个站内链接处继续解析；
+        整块都是广告位则返回 None 表示丢弃。站内站点完全不受影响。"""
+        linkrule = self.cfg.get('链接') or ''
+        if not linkrule:
+            return block
+        pos = 0
+        for _ in range(16):
+            l = pick(block[pos:], linkrule).strip()
+            if not l:
+                return block if pos == 0 else None
+            if self._is_internal(l):
+                return block[pos:] if pos else block
+            j = block.find(l, pos)
+            if j < 0:
+                return block
+            pos = j + len(l)
+        return None
+
+    def _detail_name(self, html):
+        """详情页标题优先取结构化来源，避免拿到 logo/导航等公共元素的文案"""
+        for pat in (r'<meta[^>]+property=["\']og:title["\'][^>]*?content=["\']([^"\']+)["\']',
+                    r'<meta[^>]+content=["\']([^"\']+)["\'][^>]*?property=["\']og:title["\']',
+                    r'<h1[^>]*>(.*?)</h1>',
+                    r'<h2[^>]*class=["\'][^"\']*title[^"\']*["\'][^>]*>(.*?)</h2>'):
+            m = re.search(pat, html, re.S | re.I)
+            if m:
+                v = html_mod.unescape(re.sub(r'<[^>]+>', '', m.group(1))).strip()
+                if v and len(v) > 1:
+                    return v
+        return ''
+
+    def _one(self, b):
+        t = pick(b, self.cfg.get('标题') or '').strip()
+        l = pick(b, self.cfg.get('链接') or '').strip()
+        p = pick(b, self.cfg.get('图片') or '').strip()
+        note = pick(b, self.cfg.get('副标题') or '').strip()
+        if not l:
+            return None
+        t = html_mod.unescape(re.sub(r'<[^>]+>', '', t)).strip()
+        note = html_mod.unescape(re.sub(r'<[^>]+>', '', note)).strip()
+        if not t:
+            t = note or l
+        return {
+            'vod_id': self._abs(l),
+            'vod_name': t[:120],
+            'vod_pic': self._abs(p),
+            'vod_remarks': note[:40],
+        }
+
     # ---------- 列表解析 ----------
     def _list(self, html, tid=None):
         scope = html
@@ -208,22 +288,24 @@ class Spider(Spider):
         arr = self.cfg.get('数组') or ''
         if not arr:
             return []
-        out = []
+        out, dropped = [], []
         for b in blocks(scope, arr):
-            t = pick(b, self.cfg.get('标题') or '').strip()
-            l = pick(b, self.cfg.get('链接') or '').strip()
-            p = pick(b, self.cfg.get('图片') or '').strip()
-            note = pick(b, self.cfg.get('副标题') or '').strip()
-            if not l:
-                continue
-            if not t:
-                t = note or l
-            out.append({
-                'vod_id': self._abs(l),
-                'vod_name': re.sub(r'<[^>]+>', '', t)[:120],
-                'vod_pic': self._abs(p),
-                'vod_remarks': note[:40],
-            })
+            l0 = pick(b, self.cfg.get('链接') or '').strip()
+            if l0 and not self._is_internal(l0):
+                nb = self._anti_ad(b)
+                if nb is None:
+                    dropped.append(b)       # 纯广告位，整块丢掉
+                    continue
+                b = nb
+            it = self._one(b)
+            if it:
+                out.append(it)
+        if not out and dropped:
+            # 兜底：整页都被判成广告时回退原逻辑，绝不把站点解析成空
+            for b in dropped:
+                it = self._one(b)
+                if it:
+                    out.append(it)
         return out
 
     # ---------- 接口 ----------
@@ -253,6 +335,11 @@ class Spider(Spider):
                   .replace('{pg}', str(pg))
                   .replace('{by}', by))
         url = self._abs(url)
+        # 分类 ID 含中文时自动百分号编码，避免构造出非法 URL
+        try:
+            url = urllib.parse.quote(url, safe=':/?&=#%+;,[]@!$()*\'~')
+        except Exception:
+            pass
         try:
             html = self._get(url, referer=self.host)
             lst = self._list(html, tid)
@@ -281,15 +368,24 @@ class Spider(Spider):
             html = self._get(vid, referer=self.host)
         except Exception:
             return {'list': []}
-        name = pick(html, self.cfg.get('标题') or '') or ''
+        name = self._detail_name(html) or pick(html, self.cfg.get('标题') or '') or ''
+        name = html_mod.unescape(re.sub(r'<[^>]+>', '', name)).strip()
         pic = self._abs(pick(html, self.cfg.get('图片') or '') or '')
         desc = pick(html, self.cfg.get('简介') or '') or ''
-        urls = []
         # 1) 优先取播放器里真实使用的地址（页面注释里的往往带防盗链参数，会 403）
-        for pat in (r"""url\s*:\s*['"](https?://[^'"]+?\.(?:m3u8|mp4)[^'"]*)['"]""",
-                    r"""<source[^>]+src=['"](https?://[^'"]+?\.(?:m3u8|mp4)[^'"]*)['"]""",
-                    r"""src\s*:\s*['"](https?://[^'"]+?\.(?:m3u8|mp4)[^'"]*)['"]"""):
-            urls += re.findall(pat, html)
+        urls = []
+        # 主播放器变量最可靠：命中就只用它，避免把页面里"相关视频"的预览地址也当成剧集
+        main = re.findall(
+            r"""(?:const|let|var)\s+(?:source|src|videoUrl|hlsUrl|playUrl|video_url)\s*=\s*['"](https?://[^'"]+?\.(?:m3u8|mp4)[^'"]*)['"]""",
+            html)
+        if main:
+            urls = main
+        else:
+            for pat in (r"""(?:source|src|videoUrl|hlsUrl|playUrl|video_url|url)\s*[=:]\s*['"](https?://[^'"]+?\.(?:m3u8|mp4)[^'"]*)['"]""",
+                        r"""url\s*:\s*['"](https?://[^'"]+?\.(?:m3u8|mp4)[^'"]*)['"]""",
+                        r"""<source[^>]+src=['"](https?://[^'"]+?\.(?:m3u8|mp4)[^'"]*)['"]""",
+                        r"""src\s*:\s*['"](https?://[^'"]+?\.(?:m3u8|mp4)[^'"]*)['"]"""):
+                urls += re.findall(pat, html)
         # 2) 规则指定的跳转播放链接
         jr = self.cfg.get('跳转播放链接') or ''
         if not urls and jr:
@@ -316,7 +412,9 @@ class Spider(Spider):
         if not urls:
             for m in re.finditer(r'(https?://[^\s"\'<>\\]+?\.(?:m3u8|mp4)[^\s"\'<>\\]*)', html):
                 urls.append(m.group(1))
-        urls = [self._abs(u) for u in dict.fromkeys(urls)]
+        # 4) 过滤广告位/播放器示例片（不清掉就会播成几秒的广告）
+        urls = [u for u in dict.fromkeys(urls) if not AD_VIDEO_PAT.search(u)]
+        urls = [self._abs(u) for u in urls]
         # 去掉防盗链参数（带 line= 的那种会被拒，同域不带参数的才通）
         clean = [re.sub(r'([?&])line=[^&]*&?', r'\1', u).rstrip('?&') for u in urls]
         if clean:

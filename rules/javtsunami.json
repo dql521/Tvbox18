@@ -1,5 +1,5 @@
 {
-//https://javtsunami.com
+
 "规则名": "javtsunami.com-XYQHiker",
 "规则作者": "飞鱼",
 "请求头参数": "PC_UA",
@@ -17,14 +17,7 @@
 "首页片单链接加前缀": "",
 "首页片单链接加后缀": "",
 "分类起始页码": "1",
-//"分类链接": "https://XXXXX.com/vodtype/{cateId}-{catePg}/",
-    //{cateId}分类id
-	//{area}地区
-	//{by}排序
-	//{class}剧情
-	//{lang}语言
-	//{catePg}翻页序列号
-	//{year}日期
+
 "分类链接": "https://javtsunami.com/{cateId}/page/{catePg}?filter={by}",
 "分类名称": "全部视频&特色&热门&即将推出&审查&未经审查&中文视听&自拍&",
 "分类名称替换词": "&category/featured&category/hot-jav&category/upcoming&category/jav-censored&category/jav-uncensored&category/chinese&dt_list&",
@@ -53,26 +46,23 @@
 "直接播放链接加前缀": "",
 "直接播放链接加后缀": "",
 "直接播放直链视频请求头": "",
-//项目信息jsoup与正则截取写法切换，1为jsoup写法(默认)，0为正则截取写法
+
     "详情是否Jsoup写法":"1",
-    //类型数据，截取前缀&&截取后缀
+
     "类型详情": "",
-    //年代数据，截取前缀&&截取后缀
+
     "年代详情": "",
-    //地区数据，截取前缀&&截取后缀
+
     "地区详情": "",
-    //演员数据，截取前缀&&截取后缀
+
     "演员详情": "#video-actors&&a&&Text",
-    //简介内容，截取前缀&&截取后缀
+
     "简介详情": ".video-description&&p,1&&Text",
-
-
 
 "分析MacPlayer": "0",
 "是否开启手动嗅探": "1",
 "手动嗅探视频链接关键词": ".m3u8",
 "手动嗅探视频链接过滤词": "baidu.com",
-
 
 "筛选数据":{
 "":[
@@ -86,7 +76,7 @@
 {"n":"随机","v":"random"}
 ]
 }
-], 
+],
 "category/featured":[
 {
 "key":"by",
@@ -99,7 +89,6 @@
 ]
 }
 ]
-
 
                 }
 

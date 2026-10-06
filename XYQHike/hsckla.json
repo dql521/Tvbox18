@@ -1,6 +1,5 @@
 {
-//发布页www.7000.me
-//hsck.la
+
 "规则名": "黄色仓库la-xyqh",
 "规则作者": "飞鱼",
 "请求头参数": "手机",
@@ -18,7 +17,7 @@
 "首页片单链接加前缀": "http://www.17188.cc",
 "首页片单链接加后缀": "",
 "分类起始页码": "1",
-//"分类链接": "https://rouv98.xyz/vodtype/{cateId}-{catePg}/",
+
 "分类链接": "http://www.17188.cc/index.php/vod/{cateId}/page/{catePg}.html",
 "分类名称": "麻豆&中字&国产&欧美&日韩&传媒学院",
 "分类名称替换词": "type/id/1&type/id/2&type/id/3&type/id/4&type/id/5&search/wd/麻豆",
@@ -34,31 +33,31 @@
 "筛选数据":{
 "search/wd/麻豆":[
   {"key":"cateId","name":"分类","value":[
-{"v":"search/wd/麻豆","n":"麻豆传媒"}, 
-{"v":"search/wd/91制片厂","n":"91制片厂"}, 
-{"v":"search/wd/蜜桃影像","n":"蜜桃影像"}, 
-{"v":"search/wd/果冻传媒","n":"果冻传媒"}, 
-{"v":"search/wd/星空无限","n":"星空无限"}, 
-{"v":"search/wd/天美传媒","n":"天美传媒"}, 
-{"v":"search/wd/精东影业","n":"精东影业"}, 
-{"v":"search/wd/皇家华人","n":"皇家华人"}, 
-{"v":"search/wd/糖心Vlog","n":"糖心Vlog"}, 
-{"v":"search/wd/萝莉社","n":"萝莉社"}, 
-{"v":"search/wd/性视界","n":"性视界传媒"}, 
-{"v":"search/wd/糖心Vlog","n":"兔子先生"}, 
-{"v":"search/wd/草霉视频","n":"草霉视频"}, 
-{"v":"search/wd/玩偶姐姐","n":"玩偶姐姐"}, 
-{"v":"search/wd/爱豆传媒","n":"爱豆传媒"}, 
-{"v":"search/wd/91茄子","n":"91茄子"}, 
-{"v":"search/wd/扣扣传媒","n":"扣扣传媒"}, 
-{"v":"search/wd/爱豆传媒","n":"爱豆传媒"}, 
-{"v":"search/wd/SA国际传媒","n":"SA国际传媒"}, 
-{"v":"search/wd/杏吧","n":"杏吧原创"}, 
-{"v":"search/wd/大象传媒","n":"大象传媒"}, 
-{"v":"search/wd/乌托邦","n":"乌托邦"}, 
-{"v":"search/wd/69传媒","n":"69传媒"}, 
-{"v":"search/wd/成人头条","n":"成人头条"}, 
-{"v":"search/wd/乌鸦传媒","n":"乌鸦传媒"}, 
+{"v":"search/wd/麻豆","n":"麻豆传媒"},
+{"v":"search/wd/91制片厂","n":"91制片厂"},
+{"v":"search/wd/蜜桃影像","n":"蜜桃影像"},
+{"v":"search/wd/果冻传媒","n":"果冻传媒"},
+{"v":"search/wd/星空无限","n":"星空无限"},
+{"v":"search/wd/天美传媒","n":"天美传媒"},
+{"v":"search/wd/精东影业","n":"精东影业"},
+{"v":"search/wd/皇家华人","n":"皇家华人"},
+{"v":"search/wd/糖心Vlog","n":"糖心Vlog"},
+{"v":"search/wd/萝莉社","n":"萝莉社"},
+{"v":"search/wd/性视界","n":"性视界传媒"},
+{"v":"search/wd/糖心Vlog","n":"兔子先生"},
+{"v":"search/wd/草霉视频","n":"草霉视频"},
+{"v":"search/wd/玩偶姐姐","n":"玩偶姐姐"},
+{"v":"search/wd/爱豆传媒","n":"爱豆传媒"},
+{"v":"search/wd/91茄子","n":"91茄子"},
+{"v":"search/wd/扣扣传媒","n":"扣扣传媒"},
+{"v":"search/wd/爱豆传媒","n":"爱豆传媒"},
+{"v":"search/wd/SA国际传媒","n":"SA国际传媒"},
+{"v":"search/wd/杏吧","n":"杏吧原创"},
+{"v":"search/wd/大象传媒","n":"大象传媒"},
+{"v":"search/wd/乌托邦","n":"乌托邦"},
+{"v":"search/wd/69传媒","n":"69传媒"},
+{"v":"search/wd/成人头条","n":"成人头条"},
+{"v":"search/wd/乌鸦传媒","n":"乌鸦传媒"},
 {"v":"search/wd/香蕉视频","n":"香蕉视频"}
 
 ]
@@ -80,7 +79,6 @@
 "直接播放链接加前缀": "",
 "直接播放链接加后缀": "",
 "直接播放直链视频请求头": "",
-
 
 "分析MacPlayer": "0",
 "是否开启手动嗅探": "1",

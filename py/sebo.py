@@ -64,44 +64,69 @@ class Spider(Spider):
         return
 
     def homeContent(self, filter):
-        try:
-            d = self._json(self.base + 'json.txt')
-            plats = d.get('pingtai', [])
-        except Exception:
-            plats = []
-        return {'class': [{'type_name': p.get('title') or p.get('address'), 'type_id': p.get('address')}
-                          for p in plats if p.get('address')], 'filters': {}}
+        # 平台作为列表项直接展示，不再铺成上百个分类 tab
+        return {'class': [], 'filters': {}, 'list': self._plats()}
 
     def homeVideoContent(self):
-        return {'list': []}
+        return {'list': self._plats()}
+
+    def _pindex(self):
+        try:
+            return self._json(self.base + 'json.txt').get('pingtai', []) or []
+        except Exception:
+            return []
+
+    def _plats(self):
+        out = []
+        for p in self._pindex():
+            addr = p.get('address')
+            if not addr:
+                continue
+            n = str(p.get('Number') or '').strip()
+            remark = ('%s 个直播间' % n) if n and n not in ('0', 'None') else '直播平台'
+            out.append({
+                'vod_id': 'sebo::' + str(addr),
+                'vod_name': p.get('title') or str(addr),
+                'vod_pic': p.get('xinimg') or '',
+                'vod_remarks': remark,
+            })
+        return out
+
+    def _title_of(self, addr):
+        for p in self._pindex():
+            if str(p.get('address')) == str(addr):
+                return p.get('title') or str(addr)
+        return str(addr)
 
     def categoryContent(self, tid, pg, filter, extend):
-        try:
-            d = self._json(self.base + str(tid))
-            items = d.get('zhubo', [])
-        except Exception:
-            items = []
-        out = []
-        for it in items:
-            u = it.get('address') or ''
-            if not u:
-                continue
-            out.append({
-                'vod_id': u,
-                'vod_name': (it.get('title') or '直播')[:80],
-                'vod_pic': it.get('img') or '',
-                'vod_remarks': '直播',
-            })
-        return {'list': out, 'page': int(pg), 'pagecount': 1, 'limit': 999, 'total': len(out)}
+        # 兜底：壳若仍按分类调用，同样给出平台列表
+        lst = self._plats()
+        return {'list': lst, 'page': 1, 'pagecount': 1, 'limit': 999, 'total': len(lst)}
 
     def searchContent(self, key, quick, pg="1"):
         return {'list': []}
 
     def detailContent(self, ids):
         vid = ids[0] if isinstance(ids, (list, tuple)) and ids else str(ids)
+        room = str(vid).split('sebo::', 1)[-1]
+        try:
+            items = self._json(self.base + room).get('zhubo', []) or []
+        except Exception:
+            items = []
+        # 该平台的每个直播间 = 一集
+        segs = []
+        for it in items:
+            u = str(it.get('address') or '').strip()
+            if not u:
+                continue
+            nm = re.sub(r'[#$]', ' ', str(it.get('title') or '直播')).strip()[:40] or '直播'
+            segs.append('%s$%s' % (nm, u))
+        if not segs:
+            return {'list': []}
         return {'list': [{
-            'vod_id': vid, 'vod_name': '直播', 'vod_pic': '',
-            'vod_play_from': '直播', 'vod_play_url': '直播$' + vid,
+            'vod_id': vid, 'vod_name': self._title_of(room), 'vod_pic': '',
+            'vod_content': '',
+            'vod_play_from': '直播', 'vod_play_url': '#'.join(segs),
         }]}
 
     def playerContent(self, flag, id, keys=None):
