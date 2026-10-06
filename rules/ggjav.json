@@ -8,7 +8,7 @@
 "是否开启获取首页数据": "1",
 "首页推荐链接": "https://ggjav.com",
 "首页列表数组规则": "body",
-"首页片单列表数组规则": ".large-3:has(img)",
+"首页片单列表数组规则": ".large-3:not(.native_ads):has(img)",
 "首页片单是否Jsoup写法": "1",
 "首页片单标题": ".item_title&&Text",
 "首页片单链接": "a&&href",
@@ -22,7 +22,7 @@
 "分类名称": "有碼AV&無碼AV&素人AV&中文字幕&歐美&動漫",
 "分类名称替换词": "censored&uncensored&amateur&chinese&europe&cartoon",
 "分类截取模式": "1",
-"分类列表数组规则": "body&&.large-3:has(img)",
+"分类列表数组规则": "body&&.large-3:not(.native_ads):has(img)",
 "分类片单是否Jsoup写法": "1",
 "分类片单标题": ".item_title&&Text",
 "分类片单链接": "a&&href",
@@ -35,7 +35,7 @@
 "搜索链接": "https://ggjav.com/main/search?string={wd}",
 "POST请求数据": "",
 "搜索截取模式": "1",
-"搜索列表数组规则": "body&&.large-3:has(img)",
+"搜索列表数组规则": "body&&.large-3:not(.native_ads):has(img)",
 "搜索片单是否Jsoup写法": "1",
 "搜索片单图片": "img&&src",
 "搜索片单标题": ".item_title&&Text",
@@ -132,5 +132,5 @@
 "分析MacPlayer": "0",
 "是否开启手动嗅探": "1",
 "手动嗅探视频链接关键词": ".m3u8#.mp4",
-"手动嗅探视频链接过滤词": "edge-hls#baidu.com"
+"手动嗅探视频链接过滤词": "edge-hls#baidu.com#ggjav.com/media/ads#ggjav.com/media/ad/#exosrv#magsrv#endowmentoverhangutmost#trwl1.com#trackwilltrk#realsrv#adserve.work#fluxtrck#tyrantdb#googletagmanager#preroll#_ads"
 }
