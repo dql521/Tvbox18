@@ -8,11 +8,16 @@ import sys
 import json
 import ssl
 import html as html_mod
+import http.cookiejar
 import urllib.parse
 import urllib.request
 
 sys.path.append("..")
 from base.spider import Spider
+
+# 中转：规则里填了「中转」就所有请求走中转机（解决墙外源必须挂梯子的问题）；
+# 中转不通时自动回退直连，绝不把站点解析成空白。
+RELAY_WRAP_PAT = re.compile(r'^(https?://[^/]+)/(https?)/([^/\s]+)(/.*)?$')
 
 MOBILE_UA = ("Mozilla/5.0 (Linux; Android 13; Mobile) AppleWebKit/537.36 "
              "(KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36")
@@ -106,6 +111,11 @@ class Spider(Spider):
         self.host = ''
         self.headers = {'User-Agent': MOBILE_UA}
         self._ctx = None
+        self.relay = ''            # 中转机地址，空 = 直连
+        self.relay_media = False   # 播放地址是否也走中转
+        self._jar = http.cookiejar.CookieJar()
+        self._opener = urllib.request.build_opener(
+            urllib.request.HTTPCookieProcessor(self._jar))
 
     # ---------- 基础设施 ----------
     def _ssl(self):
@@ -116,19 +126,45 @@ class Spider(Spider):
             self._ctx = c
         return self._ctx
 
+    def _wrap(self, url):
+        """把上游地址套上中转前缀；已经是中转地址的不重复套"""
+        u = str(url or '')
+        if not self.relay or not u.startswith('http') or u.startswith(self.relay):
+            return u
+        try:
+            s = urllib.parse.urlsplit(u)
+        except Exception:
+            return u
+        if not s.netloc:
+            return u
+        out = '%s/%s/%s%s' % (self.relay, s.scheme, s.netloc, s.path or '/')
+        if s.query:
+            out += '?' + s.query
+        return out
+
     def _get(self, url, referer=None, timeout=20):
         h = dict(self.headers)
         if referer:
             h['Referer'] = referer
-        req = urllib.request.Request(url, headers=h)
-        r = urllib.request.urlopen(req, timeout=timeout, context=self._ssl())
-        raw = r.read()
         enc = self.cfg.get('编码') or 'UTF-8'
         enc = 'utf-8' if str(enc).upper() in ('UTF-8', 'UTF8') else str(enc)
-        try:
-            return raw.decode(enc, 'replace')
-        except Exception:
-            return raw.decode('utf-8', 'replace')
+        targets = [self._wrap(url)]
+        if targets[0] != url:
+            targets.append(url)          # 中转不通时回退直连
+        last = None
+        for t in targets:
+            try:
+                req = urllib.request.Request(t, headers=h)
+                r = self._opener.open(req, timeout=timeout)
+                raw = r.read()
+                try:
+                    return raw.decode(enc, 'replace')
+                except Exception:
+                    return raw.decode('utf-8', 'replace')
+            except Exception as e:
+                last = e
+                continue
+        raise last if last else RuntimeError('request failed')
 
     def _abs(self, u):
         u = str(u or '').strip()
@@ -168,6 +204,13 @@ class Spider(Spider):
             self.cfg = {}
         self.host = str(self.cfg.get('主页url') or '').rstrip('/')
         self.headers = self._headers(self.cfg.get('请求头'))
+        self.relay = str(self.cfg.get('中转') or '').strip().rstrip('/')
+        if self.relay and not self.relay.startswith('http'):
+            self.relay = 'http://' + self.relay
+        mv = self.cfg.get('中转视频')
+        self.relay_media = str(mv).lower() not in ('0', 'false', 'no', 'none', '') if mv is not None else bool(self.relay)
+        if not self.relay:
+            self.relay_media = False
         self.cates = self._cates(self.cfg.get('分类') or '')
         return
 
@@ -421,6 +464,8 @@ class Spider(Spider):
             urls = clean
         if not urls:
             return {'list': []}
+        if self.relay_media:
+            urls = [self._wrap(u) for u in urls]
         play = '#'.join('第%d集$%s' % (i + 1, u) for i, u in enumerate(urls))
         return {'list': [{
             'vod_id': vid, 'vod_name': name or '视频', 'vod_pic': pic,
@@ -429,6 +474,8 @@ class Spider(Spider):
 
     def playerContent(self, flag, id, keys=None):
         url = str(id or '')
-        if url.startswith('http'):
-            return {'parse': 0, 'url': url, 'header': json.dumps(self.headers, ensure_ascii=False)}
-        return {'parse': 0, 'url': self._abs(url), 'header': json.dumps(self.headers, ensure_ascii=False)}
+        if not url.startswith('http'):
+            url = self._abs(url)
+        if self.relay_media:
+            url = self._wrap(url)
+        return {'parse': 0, 'url': url, 'header': json.dumps(self.headers, ensure_ascii=False)}

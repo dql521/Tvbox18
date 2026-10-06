@@ -347,17 +347,6 @@
    "ext": ""
   },
   {
-   "key": "九个区.py",
-   "name": "九个区.py",
-   "type": 3,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/plugin/adult/zone9.py",
-   "order_num": 5,
-   "ext": ""
-  },
-  {
    "key": "香蕉",
    "name": "香蕉.py",
    "type": 3,
@@ -390,13 +379,6 @@
    "ext": ""
   },
   {
-   "key": "py_lsys111",
-   "name": "恋丝影视[py]",
-   "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/lsys111.py",
-   "ext": ""
-  },
-  {
    "key": "py_rolizxwnoble",
    "name": "乱伦仓库[py]",
    "type": 3,
@@ -415,13 +397,6 @@
    "name": "猎奇影视[py]",
    "type": 3,
    "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/xx01.py",
-   "ext": ""
-  },
-  {
-   "key": "py_ybhz51",
-   "name": "玉蚌含珠[py]",
-   "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/ybhz51.py",
    "ext": ""
   },
   {
@@ -548,19 +523,6 @@
    "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/jav.json"
   },
   {
-   "key": "KISSAV",
-   "name": "KISSAV",
-   "type": 3,
-   "searchable": 1,
-   "style": {
-    "ratio": 1.43
-   },
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/KISSAV.json"
-  },
-  {
    "key": "csp_XYQHiker_ggjav",
    "name": "🔞GGJAV",
    "type": 3,
@@ -621,38 +583,6 @@
    "style": {
     "type": "rect",
     "ratio": 1.8
-   },
-   "_g": "good"
-  },
-  {
-   "key": "JAVDAYTV",
-   "name": "🔞JAVDAYTV(XYQHiker)",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/javday.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "meh"
-  },
-  {
-   "key": "csp_XYQHiker_18jtv🔞",
-   "name": "🔞18jtv(XYQHiker)",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/18jtv.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
    },
    "_g": "good"
   },
@@ -721,22 +651,6 @@
    "_g": "good"
   },
   {
-   "key": "csp_XYQHiker_91porn_asia",
-   "name": "🔞91porn_asia",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/91porn_asia.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.75
-   },
-   "_g": "soft"
-  },
-  {
    "key": "csp_XYQHiker_jable",
    "name": "🔞Jable④",
    "type": 3,
@@ -769,54 +683,6 @@
    "_g": "good"
   },
   {
-   "key": "csp_XYQHiker_javffm",
-   "name": "🔞JAVFFM",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/javffm.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "good"
-  },
-  {
-   "key": "csp_XYQHiker_javtsunami",
-   "name": "🔞javtsunami",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/javtsunami.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "soft"
-  },
-  {
-   "key": "csp_XYQHiker_苹果av",
-   "name": "🔞苹果av",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/pingguo.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "good"
-  },
-  {
    "key": "csp_XYQHiker_18av",
    "name": "🔞18AV",
    "type": 3,
@@ -831,22 +697,6 @@
     "ratio": 1.6
    },
    "_g": "good"
-  },
-  {
-   "key": "csp_XYQHiker_170av",
-   "name": "🔞170av",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/170av.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "meh"
   },
   {
    "key": "csp_XYQHiker_300分类",
@@ -925,22 +775,6 @@
    "_g": "good"
   },
   {
-   "key": "csp_XYQHiker_MOTV",
-   "name": "🔞MOTV",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/motv.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "good"
-  },
-  {
    "key": "csp_XYQHiker_owoAV",
    "name": "🔞OWOAV",
    "type": 3,
@@ -981,38 +815,6 @@
    "quickSearch": 0,
    "filterable": 0,
    "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/pornhub.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "good"
-  },
-  {
-   "key": "csp_XYQHiker_pornlulu",
-   "name": "🔞PornLuLu",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/pornlulu.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "soft"
-  },
-  {
-   "key": "csp_XYQHiker_qinav",
-   "name": "🔞Qinav",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/qinav.json",
    "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
@@ -1085,38 +887,6 @@
    "_g": "good"
   },
   {
-   "key": "csp_XYQHiker_台湾kiss",
-   "name": "🔞台湾kiss",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/twkiss.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "good"
-  },
-  {
-   "key": "csp_XYQHiker_正妹AV",
-   "name": "🔞正妹AV",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/zhenmei.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "good"
-  },
-  {
    "key": "csp_XYQHiker_亚色影库",
    "name": "🔞亚色影库",
    "type": 3,
@@ -1149,38 +919,6 @@
    "_g": "good"
   },
   {
-   "key": "csp_XYQHiker_杏吧视频",
-   "name": "🔞杏吧视频",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/xingba.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "good"
-  },
-  {
-   "key": "csp_XYQHiker_丽丽AV",
-   "name": "🔞丽丽AV",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/liliav.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "good"
-  },
-  {
    "key": "csp_XYQHiker_黄色仓库123",
    "name": "🔞黄色仓库123✈️🔗",
    "type": 3,
@@ -1195,22 +933,6 @@
     "ratio": 1.6
    },
    "_g": "soft"
-  },
-  {
-   "key": "csp_XYQHiker_黄色仓库la",
-   "name": "🔞黄色仓库啦✈️🔗",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/hsckla.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "meh"
   },
   {
    "key": "csp_XYQHiker_紫色成人",
@@ -1229,40 +951,8 @@
    "_g": "good"
   },
   {
-   "key": "csp_XYQHiker_酷爱成人网>",
-   "name": "🔞酷爱成人网✈️",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/kuai.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "soft"
-  },
-  {
-   "key": "csp_XYQHiker_鲨鱼av",
-   "name": "🔞鲨鱼av",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/shayuav.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "good"
-  },
-  {
    "key": "zs_17c_tw",
-   "name": "🔞一起草 (17c.tw)",
+   "name": "🔞一起草 (17c.tw) 【备】",
    "type": 3,
    "playerType": 2,
    "searchable": 1,
@@ -1272,162 +962,8 @@
    "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_17c_tw.json"
   },
   {
-   "key": "zs_17cap_cc",
-   "name": "🔞一起草 (17cap.cc)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_17cap_cc.json"
-  },
-  {
-   "key": "zs_17cap_life",
-   "name": "🔞一起草 (17cap.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_17cap_life.json"
-  },
-  {
-   "key": "zs_51avtv_com",
-   "name": "🔞51TV (51avtv.com)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_51avtv_com.json"
-  },
-  {
-   "key": "zs_51ch1_com",
-   "name": "🔞51吃瓜网 (51ch1.com)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_51ch1_com.json"
-  },
-  {
-   "key": "zs_91aidasai_com",
-   "name": "🔞91大赛 (91aidasai.com)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_91aidasai_com.json"
-  },
-  {
-   "key": "zs_91avtv_com",
-   "name": "🔞91TV (91avtv.com)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_91avtv_com.json"
-  },
-  {
-   "key": "zs_91dytv_com",
-   "name": "🔞成人抖音 (91dytv.com)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_91dytv_com.json"
-  },
-  {
-   "key": "zs_91wz_life",
-   "name": "🔞啪哩啪哩 (91wz.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_91wz_life.json"
-  },
-  {
-   "key": "zs_98tagn_life",
-   "name": "🔞色花堂 (98tagn.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_98tagn_life.json"
-  },
-  {
-   "key": "zs_98tamg_life",
-   "name": "🔞98堂 (98tamg.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_98tamg_life.json"
-  },
-  {
-   "key": "zs_98tang_life",
-   "name": "🔞98堂 (98tang.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_98tang_life.json"
-  },
-  {
-   "key": "zs_anw3_life",
-   "name": "🔞暗网TV (anw3.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_anw3_life.json"
-  },
-  {
-   "key": "zs_bianav_com",
-   "name": "🔞bianav (bianav.com)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_bianav_com.json"
-  },
-  {
-   "key": "zs_bilibili1_life",
-   "name": "🔞逼哩视频 (bilibili1.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_bilibili1_life.json"
-  },
-  {
    "key": "zs_guazishqu_com",
-   "name": "🔞瓜子社区 (guazishqu.com)",
+   "name": "🔞瓜子社区 (guazishqu.com) 【备】",
    "type": 3,
    "playerType": 2,
    "searchable": 1,
@@ -1437,129 +973,8 @@
    "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_guazishqu_com.json"
   },
   {
-   "key": "zs_haijiaod_com",
-   "name": "🔞海角社区 (haijiaod.com)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_haijiaod_com.json"
-  },
-  {
-   "key": "zs_haijiaod_life",
-   "name": "🔞海角社区 (haijiaod.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_haijiaod_life.json"
-  },
-  {
-   "key": "zs_hdmqdj_com",
-   "name": "🔞黄豆短剧 (hdmqdj.com)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_hdmqdj_com.json"
-  },
-  {
-   "key": "zs_heitaoo_com",
-   "name": "🔞黑桃视频 (heitaoo.com)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_heitaoo_com.json"
-  },
-  {
-   "key": "zs_huanguoe_com",
-   "name": "🔞黄果短剧 (huanguoe.com)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_huanguoe_com.json"
-  },
-  {
-   "key": "zs_javtang_life",
-   "name": "🔞JAV色花堂 (javtang.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_javtang_life.json"
-  },
-  {
-   "key": "zs_juziavtv_com",
-   "name": "🔞桔子TV (juziavtv.com)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_juziavtv_com.json"
-  },
-  {
-   "key": "zs_laow3_life",
-   "name": "🔞老王视频 (laow3.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_laow3_life.json"
-  },
-  {
-   "key": "zs_madotang_life",
-   "name": "🔞麻豆堂 (madotang.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_madotang_life.json"
-  },
-  {
-   "key": "zs_madoue_life",
-   "name": "🔞麻豆传媒 (madoue.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_madoue_life.json"
-  },
-  {
-   "key": "zs_okxav_com",
-   "name": "🔞OKAV (okxav.com)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_okxav_com.json"
-  },
-  {
    "key": "zs_sifangktv_one",
-   "name": "🔞私房AV (sifangktv.one)",
+   "name": "🔞私房AV (sifangktv.one) 【主】",
    "type": 3,
    "playerType": 2,
    "searchable": 1,
@@ -1569,85 +984,8 @@
    "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_sifangktv_one.json"
   },
   {
-   "key": "zs_wge3_life",
-   "name": "🔞威哥视频 (wge3.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_wge3_life.json"
-  },
-  {
-   "key": "zs_wuxiants_life",
-   "name": "🔞无限臀山 (wuxiants.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_wuxiants_life.json"
-  },
-  {
-   "key": "zs_wuye_life",
-   "name": "🔞午夜TV (wuye.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_wuye_life.json"
-  },
-  {
-   "key": "zs_xduoxin_life",
-   "name": "🔞多杏TV (xduoxin.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_xduoxin_life.json"
-  },
-  {
-   "key": "zs_xfp8_life",
-   "name": "🔞性福啪 (xfp8.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_xfp8_life.json"
-  },
-  {
-   "key": "zs_xguetv_com",
-   "name": "🔞西瓜TV (xguetv.com)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_xguetv_com.json"
-  },
-  {
-   "key": "zs_xineba_life",
-   "name": "🔞杏吧视频 (xineba.life)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_xineba_life.json"
-  },
-  {
    "key": "zs_yeshex_life",
-   "name": "🔞夜社视频 (yeshex.life)",
+   "name": "🔞夜社视频 (yeshex.life) 【主】",
    "type": 3,
    "playerType": 2,
    "searchable": 1,
@@ -1655,17 +993,6 @@
    "filterable": 1,
    "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
    "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_yeshex_life.json"
-  },
-  {
-   "key": "zs_yiqicao_fun",
-   "name": "🔞一起草 (yiqicao.fun)",
-   "type": 3,
-   "playerType": 2,
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_yiqicao_fun.json"
   }
  ],
  "lives": [

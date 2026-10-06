@@ -48,3 +48,18 @@ python3 set-base.py --repo 用户名/仓库名
 ## 更新
 
 把新文件覆盖上去即可（壳会自动拉最新的，jsdelivr 系有缓存可能要等一会儿）。
+
+## 免梯子（中转）
+
+包里 133 个上游域名全是墙外的（105 个在 Cloudflare 后），直连必然拿不到数据。
+想免掉"每台设备都挂梯子"，用包里带的中转：
+
+1. `relay/relay.py` 传到一台墙外的机器上，跑起来：
+   `python3 relay.py -p 8899 --public-base http://你的IP:8899 --token 你的口令`
+2. 一条命令把整包切过去：
+   `python3 set-relay.py --base http://你的IP:8899 --token 你的口令`
+3. 传回仓库、壳里删旧订阅重加。
+
+还原：`python3 set-relay.py --restore`
+
+细节、流量说明和覆盖范围见 `中转版说明.txt`。
