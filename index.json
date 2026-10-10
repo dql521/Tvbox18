@@ -1,5 +1,5 @@
 {
- "spider": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+ "spider": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
  "sites": [
   {
    "key": "src_heiapi",
@@ -262,7 +262,7 @@
    "name": "🔞爱豆传媒",
    "type": 1,
    "api": "https://rourou.co/api.php/provide/vod/",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "ext": {
     "主页url": "https://rourou.co/",
     "直接播放": "1",
@@ -288,19 +288,19 @@
    "key": "lf_js_lf_live",
    "name": "💋娱乐｜直播",
    "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/lib/lf_live_min.js",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/lib/lf_live_min.js",
    "searchable": 1,
    "changeable": 0,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/live/live.txt"
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/live/live.txt"
   },
   {
    "key": "直播转点播1",
    "name": "💃┃佳丽┃直播",
    "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/live2vod.js",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/tv/live.txt"
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/live2vod.js",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/tv/live.txt"
   },
   {
    "key": "sebolive",
@@ -310,8 +310,8 @@
    "changeable": 0,
    "quickSearch": 0,
    "filterable": 0,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/sebo.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/sebo/"
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/sebo.py",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/sebo/"
   },
   {
    "key": "Phb.py",
@@ -320,7 +320,7 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/plugin/adult/Phb.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/plugin/adult/Phb.py",
    "order_num": 5,
    "ext": ""
   },
@@ -331,7 +331,7 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/plugin/adult/Xvideos.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/plugin/adult/Xvideos.py",
    "order_num": 5,
    "ext": ""
   },
@@ -342,7 +342,7 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/plugin/adult/heiliao.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/plugin/adult/heiliao.py",
    "order_num": 5,
    "ext": ""
   },
@@ -353,7 +353,7 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/plugin/adult/xiangjiao.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/plugin/adult/xiangjiao.py",
    "order_num": 5,
    "ext": ""
   },
@@ -361,70 +361,70 @@
    "key": "py_porn",
    "name": "肉视频[py]",
    "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/rousp.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/rousp.py",
    "ext": ""
   },
   {
    "key": "py_huangguo",
    "name": "黄果短剧[py]",
    "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/huangguo.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/huangguo.py",
    "ext": ""
   },
   {
    "key": "py_huangdou",
    "name": "黄豆短剧[py]",
    "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/huangdou.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/huangdou.py",
    "ext": ""
   },
   {
    "key": "py_rolizxwnoble",
    "name": "乱伦仓库[py]",
    "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/rolizxwnoble.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/rolizxwnoble.py",
    "ext": ""
   },
   {
    "key": "py_shaofu36",
    "name": "少妇喝了[py]",
    "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/shaofu36.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/shaofu36.py",
    "ext": ""
   },
   {
    "key": "py_xx01",
    "name": "猎奇影视[py]",
    "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/xx01.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/xx01.py",
    "ext": ""
   },
   {
    "key": "py_Youavhub",
    "name": "Youavhub[py]",
    "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/youav.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/youav.py",
    "ext": ""
   },
   {
    "key": "py_owoav",
    "name": "owoav[py]",
    "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/owoav.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/owoav.py",
    "ext": ""
   },
   {
    "key": "py_91porn",
    "name": "91porn[py]",
    "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/91porn.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/91porn.py",
    "ext": ""
   },
   {
    "key": "py_51吃瓜",
    "name": "51吃瓜[py]",
    "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/xigua51.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/xigua51.py",
    "ext": ""
   },
   {
@@ -433,7 +433,7 @@
    "type": 3,
    "filterable": 0,
    "changeable": 0,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/xptiantang.js"
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/xptiantang.js"
   },
   {
    "key": "女优色库",
@@ -441,7 +441,7 @@
    "type": 3,
    "filterable": 0,
    "changeable": 0,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/seku.py"
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/seku.py"
   },
   {
    "key": "py_javdb",
@@ -450,7 +450,7 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/javdb.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/javdb.py",
    "order_num": 5,
    "ext": ""
   },
@@ -462,8 +462,8 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/folder.json"
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/folder.json"
   },
   {
    "key": "一区",
@@ -473,8 +473,8 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zone1.json"
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zone1.json"
   },
   {
    "key": "18",
@@ -486,8 +486,8 @@
    },
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/18j.json"
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/18j.json"
   },
   {
    "key": "Aress",
@@ -499,8 +499,8 @@
    },
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/Aress.json"
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/Aress.json"
   },
   {
    "key": "jav",
@@ -512,14 +512,14 @@
    },
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/jav.json"
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/jav.json"
   },
   {
    "key": "py_ggjav",
    "name": "🔞GGJAV[py]",
    "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/ggjav.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/ggjav.py",
    "ext": "",
    "searchable": 1,
    "quickSearch": 0,
@@ -537,8 +537,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/bad.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/bad.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.8
@@ -553,8 +553,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/bad_search1.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/bad_search1.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.8
@@ -569,8 +569,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/52av2.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/52av2.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.8
@@ -585,8 +585,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/xnxx.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/xnxx.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -601,8 +601,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/njavtv.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/njavtv.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -617,8 +617,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/missav.app.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/missav.app.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -633,8 +633,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/jable.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/jable.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -649,8 +649,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/av6k.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/av6k.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -665,8 +665,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/18av.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/18av.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -681,8 +681,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/airav.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/airav.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -697,8 +697,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/hohoj.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/hohoj.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -713,8 +713,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/kanav.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/kanav.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -729,8 +729,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/owoav.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/owoav.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -745,8 +745,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/porn87.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/porn87.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -761,8 +761,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/pornhub.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/pornhub.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -777,8 +777,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/xHamster.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/xHamster.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -793,8 +793,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/xvideos.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/xvideos.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -809,8 +809,8 @@
    "searchable": 0,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/18jav.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/18jav.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -821,11 +821,11 @@
    "key": "csp_XYQHiker_日日撸",
    "name": "🔞日日撸",
    "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/ririlu.json",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/ririlu.json",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -841,8 +841,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/yasetube.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/yasetube.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.8
@@ -857,8 +857,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/zhuguli.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/zhuguli.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -873,8 +873,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/hsck123.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/hsck123.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -889,8 +889,8 @@
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/zise.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/zise.json",
+   "jar": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
@@ -905,8 +905,8 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_17c_tw.json"
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_17c_tw.json"
   },
   {
    "key": "zs_guazishqu_com",
@@ -916,8 +916,8 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_guazishqu_com.json"
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_guazishqu_com.json"
   },
   {
    "key": "zs_sifangktv_one",
@@ -927,8 +927,8 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_sifangktv_one.json"
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_sifangktv_one.json"
   },
   {
    "key": "zs_yeshex_life",
@@ -938,21 +938,21 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_yeshex_life.json"
+   "api": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
+   "ext": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/zsite_yeshex_life.json"
   }
  ],
  "lives": [
   {
    "name": "台湾品牌成人台",
    "type": 0,
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/live.m3u",
+   "url": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/live.m3u",
    "playerType": 1
   },
   {
    "name": "台湾品牌台(P2P)",
    "type": 0,
-   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/live-p2p.m3u",
+   "url": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/live-p2p.m3u",
    "playerType": 1
   }
  ],

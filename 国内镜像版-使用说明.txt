@@ -20,7 +20,7 @@
 
 ▍路线 A：继续用托管地址（最省事，什么都不用做）
 
-    https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/index.json
+    https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/index.json
 
   国内直连，已经上线验过。
 

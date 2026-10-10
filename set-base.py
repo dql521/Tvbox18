@@ -42,7 +42,7 @@ MIRRORS = {
     'llkk':      'https://gh.llkk.cc/https://raw.githubusercontent.com/{repo}/main',
     'jsdelivr':  'https://fastly.jsdelivr.net/gh/{repo}@main',
 }
-SELF_HOST = 'https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main'
+SELF_HOST = 'https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main'
 SKIP_EXT = {'.png', '.jpg', '.jpeg', '.gif', '.webp', '.ttf', '.woff', '.zip',
             '.apk', '.jar', '.dex', '.mp4', '.flv'}
 TEXT_EXT = {'.json', '.txt', '.m3u', '.py', '.js', '.html', '.md', '.cfg', '.xml', '.css'}
@@ -90,14 +90,14 @@ def main():
                 t = open(p, encoding='utf-8').read()
             except (UnicodeDecodeError, PermissionError):
                 continue
-            n1 = t.count('": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/')
+            n1 = t.count('": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/')
             n2 = t.count(SELF_HOST)
             if n1 or n2:
                 hit_rel += n1
                 hit_old += n2
                 files.append((os.path.relpath(p, a.root), n1, n2))
         print('检查模式（不改任何文件）：')
-        print('  相对路径引用  ": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/     %d 处' % hit_rel)
+        print('  相对路径引用  ": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/     %d 处' % hit_rel)
         print('  指向原站的绝对地址      %d 处' % hit_old)
         for f, n1, n2 in files[:15]:
             print('    %-40s 相对 %-4d 绝对 %d' % (f, n1, n2))
@@ -114,10 +114,10 @@ def main():
             t = open(p, encoding='utf-8').read()
         except (UnicodeDecodeError, PermissionError):
             continue
-        t2 = t.replace('": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/', '": "%s/' % prefix)
+        t2 = t.replace('": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/', '": "%s/' % prefix)
         t2 = t2.replace(SELF_HOST, prefix)
         if t2 != t:
-            n_rel += t.count('": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/')
+            n_rel += t.count('": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/')
             n_old += t.count(SELF_HOST)
             open(p, 'w', encoding='utf-8').write(t2)
             touched += 1
@@ -133,7 +133,7 @@ def main():
         raw = open(idx, encoding='utf-8').read()
         urls = set(re.findall(r'"%s/([^"]+)"' % re.escape(prefix), raw))
         missing = [u for u in urls if not os.path.exists(os.path.join(a.root, u))]
-        left = raw.count('": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/')
+        left = raw.count('": "https://ghfast.top/https://raw.githubusercontent.com/dql521/Tvbox18/main/')
         print('  自检：引用 %d 个文件，缺失 %d 个，剩余相对引用 %d 处'
               % (len(urls), len(missing), left))
         for m in missing[:10]:
