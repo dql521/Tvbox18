@@ -6,13 +6,63 @@ const sites = [
     'https://attack.bjidvlyog.com',
     'https://agency.bjidvlyog.com/'
 ]
-const baseUrl = sites[0];
+let baseUrl = sites[0];
+let baseAlive = false;
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 
 function mylog() {
     const TAG = "xp天堂18+";
     console.log(TAG, ...arguments)
 }
+
+// 多域名自动切换：以前是写死 sites[0]，那个域名一挂整站就全空。
+// 现在任何一个域名挂了都会自动换下一个可用的，并记住它。
+async function pickHost(force) {
+    if (baseAlive && !force) return baseUrl;
+    for (let i = 0; i < sites.length; i++) {
+        const s = sites[i].replace(/\/$/, '');
+        try {
+            const t = (await req(s + '/')).content;
+            if (t && String(t).indexOf('video-img-box') >= 0) {
+                if (s !== baseUrl) mylog('域名切换 -> ' + s);
+                baseUrl = s;
+                baseAlive = true;
+                return baseUrl;
+            }
+        } catch (e) { }
+    }
+    baseAlive = false;
+    return baseUrl;
+}
+
+// 取页面：当前域名失败就把所有域名轮一遍；expect 是这个页面该有的特征串
+async function getHtml(path, expect) {
+    const order = [baseUrl].concat(sites.map(s => s.replace(/\/$/, '')).filter(s => s !== baseUrl));
+    for (let i = 0; i < order.length; i++) {
+        const url = path.indexOf('http') === 0 ? path : order[i] + path;
+        try {
+            const t = (await req(url)).content;
+            if (t && (!expect || String(t).indexOf(expect) >= 0)) {
+                if (order[i] !== baseUrl) mylog('域名切换 -> ' + order[i]);
+                baseUrl = order[i];
+                baseAlive = true;
+                return t;
+            }
+        } catch (e) { }
+    }
+    baseAlive = false;
+    return '';
+}
+
+// 多个候选路径依次试，返回第一个真正带内容的（跨域名一起试）
+async function getHtmlAny(cands, expect) {
+    for (let i = 0; i < cands.length; i++) {
+        const t = await getHtml(cands[i], expect);
+        if (t) return { content: t, url: cands[i] };
+    }
+    return { content: '', url: '' };
+}
+
 async function init(extend) { }
 
 
@@ -26,7 +76,7 @@ let hasParsed = false;
 async function home(filter) {
     try {
         // 1. 请求首页或者含有这个导航 container 的网页源码
-        const html = await req(baseUrl).content; // 如果是在特定页面，把 baseUrl 改为对应路径
+        const html = await getHtml('/', 'app-nav'); // 域名全挂时才空，不再单点
         const $ = cheerio.load(html);
         let classes = [];
         let filters = {};
@@ -166,20 +216,22 @@ async function category(tid, pg, filter, extend) {
         const sort = extend.sort || '';
 
 
-        let url = `${baseUrl}${tid}/${sort}/${pg}/`;
-        mylog(`🚀 正在请求分类URL: ${url}`);
+        // 分类页 URL 有两套格式：带排序的 /tid/sort/pg/ 只对部分分类有效，
+        // 不带排序的 /tid/pg/ 对所有分类都通 —— 依次尝试，取真正带视频块的那个
+        const cands = [];
+        if (sort) cands.push(`${tid}/${sort}/${pg}/`);
+        cands.push(`${tid}/${pg}/`);
+        cands.push(`${tid}`);
 
-        // if (tid.includes('article')) {
-        //     url = baseUrl + tid
-        //     mylog(`🚀 正在请求分类URL: ${url}`);
+        // 候选路径 × 全部域名 一起试，取第一个真带视频块的
+        const got = await getHtmlAny(cands, 'video-img-box');
+        const html = got.content;
+        const usedUrl = got.url ? baseUrl + got.url : '';
+        if (!html) {
+            return JSON.stringify({ list: [] });
+        }
+        mylog(`🚀 分类URL: ${usedUrl}`);
 
-        //     const html = (await req(url)).content;
-        //     const $ = cheerio.load(html);
-        //     return parseArticleList(html)
-        // }
-
-
-        const html = (await req(url)).content;
         const $ = cheerio.load(html);
 
         const videoElements = $('.col-6.col-sm-4.col-lg-3').toArray();
@@ -268,8 +320,8 @@ async function category(tid, pg, filter, extend) {
 // }
 async function detail(vid) {
     try {
-        const url = baseUrl + vid;
-        const html = (await req(url)).content;
+        const html = await getHtml(vid, 'video-img-box');
+        if (!html) return JSON.stringify({ list: [] });
         const $ = cheerio.load(html);
 
         // if (vid.includes('/article/')) {
@@ -304,7 +356,8 @@ async function detail(vid) {
 
         const lines = ["hls线路"];
         const vod_play_from = lines.join("$$$");
-        const playlistArray = [`正片\$${hlsUrl}`];
+        // 这里给的是站内路径，真正的 m3u8 到播放那一刻现取（地址带时效鉴权）
+        const playlistArray = [`正片\$${vid}`];
         const vod_play_url = playlistArray.join('$$$');
 
         const watchCount = $('.video-info span[class^="interaction_watch_count_"]').text().trim().toUpperCase() || '';
@@ -335,10 +388,9 @@ async function search(key, quick, page) {
     try {
         page = page || 1;
 
-        const url = baseUrl + `/search/${key}/${page}/`;
-        mylog(`正在搜索: ${url}`);
-
-        const html = (await req(url)).content;
+        const html = await getHtml(`/search/${encodeURIComponent(key)}/${page}/`, 'video-img-box');
+        mylog(`正在搜索: ${key} 第${page}页 -> ${baseUrl}`);
+        if (!html) return JSON.stringify({ list: [] });
         const $ = cheerio.load(html);
 
         const searchElements = $('.video-img-box').toArray();
@@ -379,10 +431,18 @@ async function search(key, quick, page) {
     }
 }
 async function play(flag, id, vipFlags) {
+    let url = String(id || '').trim();
+    // 详情页给出的是站内路径：播放时现取一次。
+    // 该站的播放地址带 auth_key（有时效），缓存下来过一会就播不了。
+    if (url && url.indexOf('http') !== 0) {
+        const html = await getHtml(url.indexOf('/') === 0 ? url : '/' + url, 'video-img-box');
+        const m = html ? String(html).match(/https?:\/\/[^\s"'`<>]+\.m3u8(?:\?[^\s"'`<>]+)?/) : null;
+        if (m) url = m[0];
+    }
     return JSON.stringify({
         parse: 0,
-        url: id,
-        header: { "User-Agent": UA, "Referer": baseUrl }
+        url: url,
+        header: { "User-Agent": UA, "Referer": baseUrl + "/" }
     });
 }
 async function getRealImgurl(imgurl) {
@@ -430,4 +490,11 @@ async function getRealImgurl(imgurl) {
     }
 }
 
-export default { init, home, category, detail, search, play };
+const SPIDER_API = { init, home, category, detail, search, play };
+
+// 兼容两种壳：FongMi / 影视TV 以 ES module 加载（严格模式），原版 TVBox 以脚本方式加载。
+// 显式挂到 globalThis，两边都能拿到。
+if (typeof globalThis !== 'undefined') globalThis.__JS_SPIDER__ = SPIDER_API;
+if (typeof window !== 'undefined') window.__JS_SPIDER__ = SPIDER_API;
+
+export default SPIDER_API;

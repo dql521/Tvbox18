@@ -250,8 +250,21 @@ class Spider(Spider):
             
             self.log(f"访问详情URL: {detail_url}")
             rsp = self.fetch(detail_url, headers=self.headers)
-            doc = self.html(rsp.text)
-            video_info = self._get_detail(doc, rsp.text, vid)
+            body = rsp.text if rsp is not None else ''
+            doc = self.html(body)
+            video_info = self._get_detail(doc, body, vid)
+            # 站点对部分分区会返回错误页（标题是英文 "System Error"），
+            # 旧逻辑会把这段报错直接当成影片标题显示出来。这里做兜底。
+            if video_info:
+                nm = str(video_info.get('vod_name') or '').strip()
+                if (not nm) or ('system error' in nm.lower()) or ('error' in nm.lower() and len(nm) < 20):
+                    alt = self._title_by_api(video_id)
+                    video_info['vod_name'] = alt or ('视频 %s' % video_id)
+                if not str(video_info.get('vod_play_url') or '').strip():
+                    v = self._play_url_by_api(video_id)
+                    if v:
+                        video_info['vod_play_url'] = '第1集$' + v
+                        video_info.setdefault('vod_play_from', '直接播放')
             return {'list': [video_info]} if video_info else {'list': []}
         except Exception as e:
             self.log(f"详情获取出错: {str(e)}")
@@ -372,6 +385,35 @@ class Spider(Spider):
                 play_url = f"{self.host}/html/kkyd.html?m={id}"
             return {'parse': 1, 'playUrl': '', 'url': play_url}
 
+    def _title_by_api(self, video_id):
+        """详情页失效时，用站点 API 取标题"""
+        try:
+            u = "%s/api/v2/vod/detail/%s" % (self.api_host, video_id)
+            r = self.fetch(u, headers=self.headers)
+            if r is not None and r.status_code == 200:
+                d = r.json().get('data') or {}
+                t = d.get('vod_name') or ''
+                if t:
+                    return str(t).strip()
+        except Exception:
+            pass
+        return ''
+
+    def _play_url_by_api(self, video_id):
+        """取真播放地址（优先 httpurl，其次 httpurl_preview）"""
+        try:
+            u = "%s/api/v2/vod/reqplay/%s" % (self.api_host, video_id)
+            h = dict(self.headers)
+            h.update({'Referer': self.host + '/', 'Origin': self.host, 'X-Requested-With': 'XMLHttpRequest'})
+            r = self.fetch(u, headers=h)
+            if r is not None and r.status_code == 200:
+                d = r.json().get('data') or {}
+                v = str(d.get('httpurl') or d.get('httpurl_preview') or '')
+                return v.replace('?300', '')
+        except Exception:
+            pass
+        return ''
+
     def _get_video_by_api(self, id, video_id):
         """通过API获取视频地址"""
         try:
@@ -391,9 +433,12 @@ class Spider(Spider):
                 self.log(f"API响应: {data}")
                 
                 if data.get('retcode') == 3:
-                    video_url = data.get('data', {}).get('httpurl_preview', '')
+                    _d = data.get('data') or {}
+                    # 旧逻辑只看 retcode：=3 时直接取 httpurl_preview（预告片），
+                    # 而真源 httpurl 明明有值却被丢掉 → 表现成"只播预告/无法播放"。
+                    video_url = _d.get('httpurl') or _d.get('httpurl_preview') or ''
                 else:
-                    video_url = data.get('data', {}).get('httpurl', '')
+                    video_url = (data.get('data') or {}).get('httpurl', '')
                 
                 if video_url:
                     video_url = video_url.replace('?300', '')

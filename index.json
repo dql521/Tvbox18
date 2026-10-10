@@ -428,13 +428,6 @@
    "ext": ""
   },
   {
-   "key": "py_51短剧",
-   "name": "51短剧[py]",
-   "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/duanju51.py",
-   "ext": ""
-  },
-  {
    "key": "xp天堂",
    "name": "XP天堂[js]",
    "type": 3,
@@ -523,20 +516,18 @@
    "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/jav.json"
   },
   {
-   "key": "csp_XYQHiker_ggjav",
-   "name": "🔞GGJAV",
+   "key": "py_ggjav",
+   "name": "🔞GGJAV[py]",
    "type": 3,
-   "api": "csp_XYQHiker",
+   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/js/ss/ggjav.py",
+   "ext": "",
    "searchable": 1,
    "quickSearch": 0,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/ggjav.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
    "style": {
     "type": "rect",
     "ratio": 1.6
-   },
-   "_g": "good"
+   }
   },
   {
    "key": "csp_XYQHiker_bad",
@@ -635,22 +626,6 @@
    "_g": "good"
   },
   {
-   "key": "csp_XYQHiker_nowavtv",
-   "name": "🔞NOWAVTV",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/nowavtv.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "good"
-  },
-  {
    "key": "csp_XYQHiker_jable",
    "name": "🔞Jable④",
    "type": 3,
@@ -697,34 +672,6 @@
     "ratio": 1.6
    },
    "_g": "good"
-  },
-  {
-   "key": "csp_XYQHiker_300分类",
-   "name": "🔞300分类",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 1,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/cat300.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "_g": "soft"
-  },
-  {
-   "key": "csp_XYQHiker_444咖啡",
-   "name": "🔞444咖啡",
-   "type": 3,
-   "api": "csp_XYQHiker",
-   "searchable": 1,
-   "quickSearch": 0,
-   "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/coffee444.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
-   "style": {
-    "type": "rect",
-    "ratio": 1.6
-   },
-   "_g": "soft"
   },
   {
    "key": "csp_XYQHiker_airav",
@@ -856,10 +803,10 @@
   },
   {
    "key": "csp_XYQHiker_18jav",
-   "name": "🔞18JAV(XYQHiker)",
+   "name": "🔞18JAV",
    "type": 3,
    "api": "csp_XYQHiker",
-   "searchable": 1,
+   "searchable": 0,
    "quickSearch": 0,
    "filterable": 0,
    "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/18jav.json",
@@ -874,17 +821,17 @@
    "key": "csp_XYQHiker_日日撸",
    "name": "🔞日日撸",
    "type": 3,
-   "api": "csp_XYQHiker",
+   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/py/xbpq.py",
    "searchable": 1,
-   "quickSearch": 0,
+   "quickSearch": 1,
    "filterable": 0,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/XYQHike/ririlu.json",
-   "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/jar/xyqxbpq.jar",
+   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/dql521/Tvbox18/main/rules/ririlu.json",
    "style": {
     "type": "rect",
     "ratio": 1.6
    },
-   "_g": "good"
+   "_g": "good",
+   "playerType": 2
   },
   {
    "key": "csp_XYQHiker_亚色影库",

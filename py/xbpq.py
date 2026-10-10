@@ -415,12 +415,15 @@ class Spider(Spider):
         name = html_mod.unescape(re.sub(r'<[^>]+>', '', name)).strip()
         pic = self._abs(pick(html, self.cfg.get('图片') or '') or '')
         desc = pick(html, self.cfg.get('简介') or '') or ''
+        # 0) 苹果CMS 系的播放器 JSON 会把斜杠转义成 \/ （player_aaaa 里就是这样），
+        #    不还原就永远抽不到地址 —— 这是"列表正常但点进去播不了"的常见根因。
+        html_url = html.replace('\\/', '/')
         # 1) 优先取播放器里真实使用的地址（页面注释里的往往带防盗链参数，会 403）
         urls = []
         # 主播放器变量最可靠：命中就只用它，避免把页面里"相关视频"的预览地址也当成剧集
         main = re.findall(
             r"""(?:const|let|var)\s+(?:source|src|videoUrl|hlsUrl|playUrl|video_url)\s*=\s*['"](https?://[^'"]+?\.(?:m3u8|mp4)[^'"]*)['"]""",
-            html)
+            html_url)
         if main:
             urls = main
         else:
@@ -428,7 +431,7 @@ class Spider(Spider):
                         r"""url\s*:\s*['"](https?://[^'"]+?\.(?:m3u8|mp4)[^'"]*)['"]""",
                         r"""<source[^>]+src=['"](https?://[^'"]+?\.(?:m3u8|mp4)[^'"]*)['"]""",
                         r"""src\s*:\s*['"](https?://[^'"]+?\.(?:m3u8|mp4)[^'"]*)['"]"""):
-                urls += re.findall(pat, html)
+                urls += re.findall(pat, html_url)
         # 2) 规则指定的跳转播放链接
         jr = self.cfg.get('跳转播放链接') or ''
         if not urls and jr:
@@ -453,7 +456,7 @@ class Spider(Spider):
                     break
         # 3) 通用兜底
         if not urls:
-            for m in re.finditer(r'(https?://[^\s"\'<>\\]+?\.(?:m3u8|mp4)[^\s"\'<>\\]*)', html):
+            for m in re.finditer(r'(https?://[^\s"\'<>\\]+?\.(?:m3u8|mp4)[^\s"\'<>\\]*)', html_url):
                 urls.append(m.group(1))
         # 4) 过滤广告位/播放器示例片（不清掉就会播成几秒的广告）
         urls = [u for u in dict.fromkeys(urls) if not AD_VIDEO_PAT.search(u)]
@@ -462,6 +465,18 @@ class Spider(Spider):
         clean = [re.sub(r'([?&])line=[^&]*&?', r'\1', u).rstrip('?&') for u in urls]
         if clean:
             urls = clean
+        # 5) 兜底：列表链接本身带播放参数（?v=真地址 这类空壳详情站），详情页抓不到真源时用它
+        if not urls:
+            try:
+                qs = urllib.parse.parse_qs(urllib.parse.urlsplit(vid).query)
+            except Exception:
+                qs = {}
+            for key in ('v', 'url', 'play', 'm3u8', 'src', 'video', 'mp4'):
+                for cand in qs.get(key, []):
+                    cand = str(cand).strip()
+                    if re.match(r'^https?://', cand) and not AD_VIDEO_PAT.search(cand):
+                        urls.append(cand)
+            urls = list(dict.fromkeys(urls))
         if not urls:
             return {'list': []}
         if self.relay_media:

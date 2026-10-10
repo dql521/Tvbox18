@@ -1,167 +1,303 @@
 {
-
-"规则名": "亚色影库-XYQHiker",
-"规则作者": "飞鱼",
-"请求头参数": "手机",
-"网页编码格式": "UTF-8",
-"图片是否需要代理": "0",
-"是否开启获取首页数据": "1",
-"首页推荐链接": "https://www.yasetube.com",
-"首页列表数组规则": "#main",
-"首页片单列表数组规则": "article",
-"首页片单是否Jsoup写法": "1",
-"首页片单标题": "a&&title",
-"首页片单链接": "a&&href",
-"首页片单图片": "img&&data-src",
-"首页片单副标题": ".hd-video&&Text+'👁️'+.views&&Text+'👍'+.rating-bar&&span&&Text",
-"首页片单链接加前缀": "",
-"首页片单链接加后缀": "",
-"分类起始页码": "1",
-
-"分类链接": "https://www.yasetube.com{cateId}/page/{catePg}?filter={by}",
-"分类名称": "FC2 PPV&Mesubuta系列&MILF人妻无码&偷拍自拍&品牌传媒&女厕偷拍&海角系列&标签分类",
-"分类名称替换词": "/video/category/fc2-ppv&/video/category/me&/video/category/milf&/video/category/dalu&/video/category/madou&/video/category/nvce&/video/category/hj&/video/tag/00%e5%90%8e",
-"分类截取模式": "1",
-"分类列表数组规则": "#main&&article",
-"分类片单是否Jsoup写法": "1",
-"分类片单标题": "a&&title",
-"分类片单链接": "a&&href",
-"分类片单图片": "img&&data-src",
-"分类片单副标题": ".hd-video&&Text+'👁️'+.views&&Text+'👍'+.rating-bar&&span&&Text",
-
-"分类片单链接加前缀": "",
-"分类片单链接加后缀": "",
-"搜索请求头参数": "User-Agent$手机",
-"搜索链接": "https://www.yasetube.com/?s={wd}",
-"POST请求数据": "",
-"搜索截取模式": "1",
-"搜索列表数组规则": "#main&&article",
-"搜索片单是否Jsoup写法": "1",
-"搜索片单图片": "img&&data-src",
-"搜索片单标题": "a&&title",
-"搜索片单链接": "a&&href",
-"搜索片单副标题": ".hd-video&&Text+'👁️'+.views&&Text+'👍'+.rating-bar&&span&&Text",
-"搜索片单链接加前缀": "",
-"搜索片单链接加后缀": "",
-"链接是否直接播放": "1",
-"直接播放链接加前缀": "",
-"直接播放链接加后缀": "",
-"直接播放直链视频请求头": "",
- "详情是否Jsoup写法":"0",
-    "类型详情": "<p>類型：&&</p>",
-    "年代详情": "<p>更新：&&</p>",
-    "地区详情": "",
-    "演员详情": "",
-    "简介详情": "",
-    "线路列表数组规则": ".play-btn-group&&.line",
-    "线路标题": "'📽️'+a&&Text+'📺'",
-    "播放列表数组规则": ".line",
-    "选集列表数组规则": "a",
-    "选集标题链接是否Jsoup写法":"1",
-    "选集标题": "a&&Text",
-    "选集链接": "a&&href",
-    "是否反转选集序列": "0",
-    "选集链接加前缀": "https://www.yasetube.com",
-    "选集链接加后缀": "",
-
-"筛选数据":{
-"/video/category/fc2-ppv":[
-{"key":"by",
-  "name":"排序",
-  "value":[
-  {"v":"latest","n":"最新"},
-  {"v":"popular","n":"热门"},
-  {"v":"most-viewed","n":"观看次数"},
-  {"v":"random","n":"随机"}
-]}
-],
-"/video/tag/00%e5%90%8e":[
-  {"key":"cateId",
-  "name":"分类",
-  "value":[
-{"v":"/video/tag/00%e5%90%8e","n":"00后"},
-{"v":"/video/tag/18%e5%b2%81","n":"18岁"},
-{"v":"/video/tag/%e5%85%84%e5%a6%b9","n":"兄妹"},
-{"v":"/video/tag/%e5%a5%b3%e7%a5%9e","n":"女神"},
-{"v":"/video/tag/%e5%ad%a6%e7%94%9f","n":"学生"},
-{"v":"/video/tag/%e8%90%9d%e8%8e%89","n":"萝莉"},
-{"v":"/video/tag/%e7%be%8e%e5%a5%b3","n":"美女"},
-{"v":"/video/tag/%e4%b8%9d%e8%a2%9c","n":"丝袜"},
-{"v":"/video/tag/%e5%88%b6%e6%9c%8d","n":"制服"}]},
-{"key":"by",
-  "name":"排序",
-  "value":[
-  {"v":"latest","n":"最新"},
-  {"v":"popular","n":"热门"},
-  {"v":"most-viewed","n":"观看次数"},
-  {"v":"random","n":"随机"}
-]}
-],
-"/video/category/me":[
-{"key":"by",
-  "name":"排序",
-  "value":[
-  {"v":"latest","n":"最新"},
-  {"v":"popular","n":"热门"},
-  {"v":"most-viewed","n":"观看次数"},
-  {"v":"random","n":"随机"}
-]}
-],
-"/video/category/milf":[
-{"key":"by",
-  "name":"排序",
-  "value":[
-  {"v":"latest","n":"最新"},
-  {"v":"popular","n":"热门"},
-  {"v":"most-viewed","n":"观看次数"},
-  {"v":"random","n":"随机"}
-]}
-],
-"/video/category/dalu":[
-{"key":"by",
-  "name":"排序",
-  "value":[
-  {"v":"latest","n":"最新"},
-  {"v":"popular","n":"热门"},
-  {"v":"most-viewed","n":"观看次数"},
-  {"v":"random","n":"随机"}
-]}
-],
-"/video/category/madou":[
-{"key":"by",
-  "name":"排序",
-  "value":[
-  {"v":"latest","n":"最新"},
-  {"v":"popular","n":"热门"},
-  {"v":"most-viewed","n":"观看次数"},
-  {"v":"random","n":"随机"}
-]}
-],
-"/video/category/nvce":[
-{"key":"by",
-  "name":"排序",
-  "value":[
-  {"v":"latest","n":"最新"},
-  {"v":"popular","n":"热门"},
-  {"v":"most-viewed","n":"观看次数"},
-  {"v":"random","n":"随机"}
-]}
-],
-"/video/category/hj":[
-{"key":"by",
-  "name":"排序",
-  "value":[
-  {"v":"latest","n":"最新"},
-  {"v":"popular","n":"热门"},
-  {"v":"most-viewed","n":"观看次数"},
-  {"v":"random","n":"随机"}
-]}
-]
-
-},
-
-"分析MacPlayer": "0",
-"是否开启手动嗅探": "1",
-"手动嗅探视频链接关键词": ".m3u8#.mp4",
-"手动嗅探视频链接过滤词": "baidu.com"
+ "规则名": "亚色影库-XYQHiker",
+ "规则作者": "飞鱼",
+ "请求头参数": "手机",
+ "网页编码格式": "UTF-8",
+ "图片是否需要代理": "0",
+ "是否开启获取首页数据": "1",
+ "首页推荐链接": "https://www.yasetube.com",
+ "首页列表数组规则": "#main",
+ "首页片单列表数组规则": "article",
+ "首页片单是否Jsoup写法": "1",
+ "首页片单标题": "a&&title",
+ "首页片单链接": "a&&href",
+ "首页片单图片": "img&&src",
+ "首页片单副标题": ".hd-video&&Text+'👁️'+.views&&Text+'👍'+.rating-bar&&span&&Text",
+ "首页片单链接加前缀": "",
+ "首页片单链接加后缀": "",
+ "分类起始页码": "1",
+ "分类链接": "https://www.yasetube.com{cateId}/page/{catePg}?filter={by}",
+ "分类名称": "FC2 PPV&Mesubuta系列&MILF人妻无码&偷拍自拍&品牌传媒&女厕偷拍&海角系列&标签分类",
+ "分类名称替换词": "/video/category/fc2-ppv&/video/category/me&/video/category/milf&/video/category/dalu&/video/category/madou&/video/category/nvce&/video/category/hj&/video/tag/00%e5%90%8e",
+ "分类截取模式": "1",
+ "分类列表数组规则": "#main&&article",
+ "分类片单是否Jsoup写法": "1",
+ "分类片单标题": "a&&title",
+ "分类片单链接": "a&&href",
+ "分类片单图片": "img&&src",
+ "分类片单副标题": ".hd-video&&Text+'👁️'+.views&&Text+'👍'+.rating-bar&&span&&Text",
+ "分类片单链接加前缀": "",
+ "分类片单链接加后缀": "",
+ "搜索请求头参数": "User-Agent$手机",
+ "搜索链接": "https://www.yasetube.com/?s={wd}",
+ "POST请求数据": "",
+ "搜索截取模式": "1",
+ "搜索列表数组规则": "#main&&article",
+ "搜索片单是否Jsoup写法": "1",
+ "搜索片单图片": "img&&data-src",
+ "搜索片单标题": "a&&title",
+ "搜索片单链接": "a&&href",
+ "搜索片单副标题": ".hd-video&&Text+'👁️'+.views&&Text+'👍'+.rating-bar&&span&&Text",
+ "搜索片单链接加前缀": "",
+ "搜索片单链接加后缀": "",
+ "链接是否直接播放": "1",
+ "直接播放链接加前缀": "",
+ "直接播放链接加后缀": "",
+ "直接播放直链视频请求头": "",
+ "详情是否Jsoup写法": "1",
+ "类型详情": "<p>類型：&&</p>",
+ "年代详情": "<p>更新：&&</p>",
+ "地区详情": "",
+ "演员详情": "",
+ "简介详情": "",
+ "线路列表数组规则": "body",
+ "线路标题": "'📽️高清'",
+ "播放列表数组规则": "body",
+ "选集列表数组规则": "meta[itemprop=contentUrl]",
+ "选集标题链接是否Jsoup写法": "1",
+ "选集标题": "'▶️播放'",
+ "选集链接": "meta[itemprop=contentUrl]&&content",
+ "是否反转选集序列": "0",
+ "选集链接加前缀": "",
+ "选集链接加后缀": "",
+ "筛选数据": {
+  "/video/category/fc2-ppv": [
+   {
+    "key": "by",
+    "name": "排序",
+    "value": [
+     {
+      "v": "latest",
+      "n": "最新"
+     },
+     {
+      "v": "popular",
+      "n": "热门"
+     },
+     {
+      "v": "most-viewed",
+      "n": "观看次数"
+     },
+     {
+      "v": "random",
+      "n": "随机"
+     }
+    ]
+   }
+  ],
+  "/video/tag/00%e5%90%8e": [
+   {
+    "key": "cateId",
+    "name": "分类",
+    "value": [
+     {
+      "v": "/video/tag/00%e5%90%8e",
+      "n": "00后"
+     },
+     {
+      "v": "/video/tag/18%e5%b2%81",
+      "n": "18岁"
+     },
+     {
+      "v": "/video/tag/%e5%85%84%e5%a6%b9",
+      "n": "兄妹"
+     },
+     {
+      "v": "/video/tag/%e5%a5%b3%e7%a5%9e",
+      "n": "女神"
+     },
+     {
+      "v": "/video/tag/%e5%ad%a6%e7%94%9f",
+      "n": "学生"
+     },
+     {
+      "v": "/video/tag/%e8%90%9d%e8%8e%89",
+      "n": "萝莉"
+     },
+     {
+      "v": "/video/tag/%e7%be%8e%e5%a5%b3",
+      "n": "美女"
+     },
+     {
+      "v": "/video/tag/%e4%b8%9d%e8%a2%9c",
+      "n": "丝袜"
+     },
+     {
+      "v": "/video/tag/%e5%88%b6%e6%9c%8d",
+      "n": "制服"
+     }
+    ]
+   },
+   {
+    "key": "by",
+    "name": "排序",
+    "value": [
+     {
+      "v": "latest",
+      "n": "最新"
+     },
+     {
+      "v": "popular",
+      "n": "热门"
+     },
+     {
+      "v": "most-viewed",
+      "n": "观看次数"
+     },
+     {
+      "v": "random",
+      "n": "随机"
+     }
+    ]
+   }
+  ],
+  "/video/category/me": [
+   {
+    "key": "by",
+    "name": "排序",
+    "value": [
+     {
+      "v": "latest",
+      "n": "最新"
+     },
+     {
+      "v": "popular",
+      "n": "热门"
+     },
+     {
+      "v": "most-viewed",
+      "n": "观看次数"
+     },
+     {
+      "v": "random",
+      "n": "随机"
+     }
+    ]
+   }
+  ],
+  "/video/category/milf": [
+   {
+    "key": "by",
+    "name": "排序",
+    "value": [
+     {
+      "v": "latest",
+      "n": "最新"
+     },
+     {
+      "v": "popular",
+      "n": "热门"
+     },
+     {
+      "v": "most-viewed",
+      "n": "观看次数"
+     },
+     {
+      "v": "random",
+      "n": "随机"
+     }
+    ]
+   }
+  ],
+  "/video/category/dalu": [
+   {
+    "key": "by",
+    "name": "排序",
+    "value": [
+     {
+      "v": "latest",
+      "n": "最新"
+     },
+     {
+      "v": "popular",
+      "n": "热门"
+     },
+     {
+      "v": "most-viewed",
+      "n": "观看次数"
+     },
+     {
+      "v": "random",
+      "n": "随机"
+     }
+    ]
+   }
+  ],
+  "/video/category/madou": [
+   {
+    "key": "by",
+    "name": "排序",
+    "value": [
+     {
+      "v": "latest",
+      "n": "最新"
+     },
+     {
+      "v": "popular",
+      "n": "热门"
+     },
+     {
+      "v": "most-viewed",
+      "n": "观看次数"
+     },
+     {
+      "v": "random",
+      "n": "随机"
+     }
+    ]
+   }
+  ],
+  "/video/category/nvce": [
+   {
+    "key": "by",
+    "name": "排序",
+    "value": [
+     {
+      "v": "latest",
+      "n": "最新"
+     },
+     {
+      "v": "popular",
+      "n": "热门"
+     },
+     {
+      "v": "most-viewed",
+      "n": "观看次数"
+     },
+     {
+      "v": "random",
+      "n": "随机"
+     }
+    ]
+   }
+  ],
+  "/video/category/hj": [
+   {
+    "key": "by",
+    "name": "排序",
+    "value": [
+     {
+      "v": "latest",
+      "n": "最新"
+     },
+     {
+      "v": "popular",
+      "n": "热门"
+     },
+     {
+      "v": "most-viewed",
+      "n": "观看次数"
+     },
+     {
+      "v": "random",
+      "n": "随机"
+     }
+    ]
+   }
+  ]
+ },
+ "分析MacPlayer": "0",
+ "是否开启手动嗅探": "1",
+ "手动嗅探视频链接关键词": ".m3u8#.mp4",
+ "手动嗅探视频链接过滤词": "baidu.com#preview.mp4#/tmb/#/sp/media/#/preview#trailer"
 }

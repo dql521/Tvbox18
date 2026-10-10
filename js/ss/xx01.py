@@ -408,26 +408,31 @@ class Spider(_Base):
                 inner.append(u)
         uidm = re.search(r"([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})", page_text or "", re.I)
         full = ""
+        proxy_full = ""
         preview = ""
         if uidm:
             uid = uidm.group(1)
             inner_url = "https://surrit.com/" + uid + "/playlist.m3u8"
-            full = self.getProxyUrl() + "&type=m3u8&vid=" + urllib.parse.quote(vid, safe="") + "&url=" + urllib.parse.quote(inner_url, safe="")
+            # 真源直链优先：不走壳的本地代理（各家壳的代理端口/参数不一致，走代理会直接播不了）
+            full = inner_url
+            proxy_full = self.getProxyUrl() + "&type=m3u8&vid=" + urllib.parse.quote(vid, safe="") + "&url=" + urllib.parse.quote(inner_url, safe="")
             preview = "https://ig2.pppppppp.top/api/proxy/?url=" + urllib.parse.quote("https://fourhoi.com/" + vid + "/preview.mp4", safe="")
         froms, urls = [], []
         if full:
             froms.append("高清")
             urls.append("播放$" + full)
+        if proxy_full:
+            froms.append("备用")
+            urls.append("播放$" + proxy_full)
         for u in inner:
             if u != full.replace("https://pl3.vvvvvvvv.top/api/play?url=", "") and u not in full:
                 q = u if u.startswith("https://pl3.") else "https://pl3.vvvvvvvv.top/api/play?url=" + urllib.parse.quote(u, safe=":/?=&")
                 if q != full:
-                    froms.append("备用")
+                    froms.append("备用2")
                     urls.append("播放$" + q)
                     break
-        if preview:
-            froms.append("预告")
-            urls.append("播放$" + preview)
+        # 预告片不作为可播线路提供：它排在前面时，壳一旦解析失败就会自动切到它，
+        # 表现成"永远只播预告"。这里彻底去掉，避免误导。
         if not froms:
             four = "https://fourhoi.com/" + vid + "/playlist.m3u8"
             froms.append("高清")

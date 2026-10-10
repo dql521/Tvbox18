@@ -367,5 +367,8 @@ var SPIDER_API = {
   search: search
 };
 
-__JS_SPIDER__ = SPIDER_API;
+// 兼容两种壳：FongMi / 影视TV 以 ES module 方式加载（严格模式，未声明赋值会直接报错），
+// 原版 TVBox 以脚本方式加载。统一显式挂到 globalThis，两边都能拿到。
+if (typeof globalThis !== 'undefined') globalThis.__JS_SPIDER__ = SPIDER_API;
+if (typeof window !== 'undefined') window.__JS_SPIDER__ = SPIDER_API;
 var __jsEvalReturn = function () { return SPIDER_API; };
